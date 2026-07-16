@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda variáveis e tipos de dados em Python com exemplos práticos. Aula gratuita para iniciantes no Programando do Zero.">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="meta-estilo/style.css">
+
+    <title>Programando do Zero</title>
+</head>
+
+<body>
+    
+    <header>
+
+        <div class="hero-wrapper">
+
+            <nav class="navbar">
+
+                <div class="logo">
+
+                <a href="index.html">
+                    <img src="meta-estilo/imagens/LOGO-Quadrado-SEM.png" alt="Logo Programando do Zero">
+                </a>
+                    
+                </div>
+                 
+                <ul class="menu">
+
+                    <li><a href="index.html">INÍCIO</a></li>
+
+                    <li><a href="comece.html">COMECE POR AQUI</a></li>
+
+                    <li><a href="aprendizados.html">APRENDIZADOS</a></li>
+
+                    <li><a href="projetos.html">PROJETOS</a></li>
+
+                    <li><a href="blog1.html">BLOG</a></li>
+
+                    <li><a href="recursos.html">RECURSOS</a></li>
+
+                    <li><a href="meta.html" class="active">METAS</a></li>
+
+                    <li><a href="contato.html">CONTATO</a></li>
+
+                </ul>
+
+                <div class="header-actions">
+
+                    <button id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <button id="theme-btn">
+                        <i class="fa-regular fa-moon"></i>
+                    </button>
+
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="goals-page">
+
+   <!-- HERO -->
+<section class="goals-hero">
+
+    <!-- ESQUERDA -->
+    <div class="hero-left">
+
+         <div class="breadcrumb">
+                <a href="recursos.html">RECURSOS</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <p>META</p>
+            </div>
+
+        <h1>Metas</h1>
+
+        <p class="hero-description">
+            Aqui estão meus objetivos e compromissos para continuar 
+            evoluindo todos os dias como desenvolvedor.
+        </p>
+
+        <div class="hero-quote">
+
+            <i class="fa-solid fa-quote-left"></i>
+
+            <p>
+                Um passo de cada vez, todos os dias,
+                para construir algo incrível. 
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- CENTRO -->
+    <div class="hero-center">
+
+        <img
+            src="meta-estilo/imagens/programador.png"
+            alt="Ilustração de metas">
+
+    </div>
+    
+<!-- DIREITA -->
+<div class="hero-right">
+
+    <div class="summary-card">
+
+        <div class="summary-header">
+
+            <div class="summary-title">
+
+                <i class="fa-solid fa-trophy"></i>
+
+                <div>
+
+                    <h2>Resumo Geral</h2>
+
+                    <p>Acompanhe seu progresso geral</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- STATS -->
+        <div class="summary-stats">
+
+            <article class="stat-card">
+
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <h3>12</h3>
+
+                <span>Metas Ativas</span>
+
+            </article>
+
+            <article class="stat-card">
+
+                <div class="stat-icon blue">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <h3>8</h3>
+
+                <span>Concluídas</span>
+
+            </article>
+
+            <article class="stat-card">
+
+                <div class="stat-icon green">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <h3>75%</h3>
+
+                <span>Progresso Geral</span>
+
+            </article>
+
+            <article class="stat-card">
+
+                <div class="stat-icon orange">
+                    <i class="fa-solid fa-fire"></i>
+                </div>
+
+                <h3>45</h3>
+
+                <span>Dias de Consistência</span>
+
+            </article>
+
+        </div>
+
+        <!-- PROGRESSO -->
+        <div class="summary-progress">
+
+            <div class="progress-bar">
+
+                <div class="progress-fill"></div>
+
+            </div>
+
+            <span>75%</span>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+</section>
+
+        <!-- MINHAS METAS PRINCIPAIS -->
+    <section class="main-goals">
+
+        <div class="section-title">
+
+            <i class="fa-solid fa-bullseye"></i>
+
+            <h2>Minhas Metas Principais</h2>
+
+        </div>
+
+        <div class="goals-grid">
+
+            <!-- META 1 -->
+            <article class="goal-card">
+
+                <div class="goal-header">
+
+                    <div class="goal-icon purple">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <div class="goal-info">
+
+                        <h3>Estudar Todos os Dias</h3>
+
+                        <p>
+                            Manter uma rotina diária de estudos consistente.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="goal-progress">
+
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-90"></div>
+                    </div>
+
+                    <span>90%</span>
+
+                </div>
+
+                <div class="goal-footer">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Meta: 365 dias
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        Faltam 112 dias
+                    </span>
+
+                </div>
+
+            </article>
+
+            <!-- META 2 -->
+            <article class="goal-card">
+
+                <div class="goal-header">
+
+                    <div class="goal-icon blue">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+
+                    <div class="goal-info">
+
+                        <h3>Publicar 1 Vídeo por Semana</h3>
+
+                        <p>
+                            Compartilhar conhecimento e evolução no YouTube.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="goal-progress">
+
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-70"></div>
+                    </div>
+
+                    <span>70%</span>
+
+                </div>
+
+                <div class="goal-footer">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Meta: 52 vídeos
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        Faltam 16 vídeos
+                    </span>
+
+                </div>
+
+            </article>
+
+            <!-- META 3 -->
+            <article class="goal-card">
+
+                <div class="goal-header">
+
+                    <div class="goal-icon green">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div class="goal-info">
+
+                        <h3>Criar 12 Projetos no Ano</h3>
+
+                        <p>
+                            Construir projetos práticos e evoluir no portfólio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="goal-progress">
+
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-66"></div>
+                    </div>
+
+                    <span>66%</span>
+
+                </div>
+
+                <div class="goal-footer">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Meta: 12 projetos
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        Faltam 4 projetos
+                    </span>
+
+                </div>
+
+            </article>
+
+            <!-- META 4 -->
+            <article class="goal-card">
+
+                <div class="goal-header">
+
+                    <div class="goal-icon orange">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="goal-info">
+
+                        <h3>Dominar Novas Tecnologias</h3>
+
+                        <p>
+                            Aprofundar conhecimentos em novas ferramentas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="goal-progress">
+
+                    <div class="progress-bar">
+                        <div class="progress-fill progress-60"></div>
+                    </div>
+
+                    <span>60%</span>
+
+                </div>
+
+                <div class="goal-footer">
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Meta: 6 tecnologias
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        Faltam 2
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+    
+<section class="goals-content">
+
+    <!-- ======================================================
+        COLUNA ESQUERDA
+    ======================================================= -->
+    <aside class="areas-card">
+
+        <div class="card-title">
+
+            <div class="title-left">
+
+                <i class="fa-solid fa-layer-group"></i>
+
+                <h2>Metas por Área</h2>
+
+            </div>
+
+        </div>
+
+        <div class="areas-list">
+
+            <!-- Item -->
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-solid fa-book-open"></i>
+                        Programação
+                    </span>
+
+                    <strong>100%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+                    <div class="progress-fill progress-100"></div>
+
+                </div>
+
+            </article>
+
+            <!-- Item -->
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-brands fa-python"></i>
+
+                        Python
+
+                    </span>
+
+                    <strong>85%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-85"></div>
+
+                </div>
+
+            </article>
+
+            <!-- Item -->
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-solid fa-code"></i>
+                        Desenvolvimento
+                    </span>
+
+                    <strong>70%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-70"></div>
+
+                </div>
+
+            </article>
+
+            <!-- Item -->
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        Banco de Dados
+
+                    </span>
+
+                    <strong>60%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-60"></div>
+
+                </div>
+
+            </article>
+
+            <!-- Item -->
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+                        <i class="fa-brands fa-java"></i>
+                        Java
+                    </span>
+
+                    <strong>40%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-40"></div>
+
+                </div>
+
+            </article>
+
+            <!-- Item -->
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        DevOps 
+                    </span>
+
+                    <strong>30%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-30"></div>
+
+                </div>
+
+            </article>
+
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        Banco de Dados
+
+                    </span>
+
+                    <strong>60%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-60"></div>
+
+                </div>
+
+            </article>
+
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        Banco de Dados
+
+                    </span>
+
+                    <strong>60%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-60"></div>
+
+                </div>
+
+            </article>
+
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        Banco de Dados
+
+                    </span>
+
+                    <strong>60%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-60"></div>
+
+                </div>
+
+            </article>
+
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        Banco de Dados
+
+                    </span>
+
+                    <strong>60%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-60"></div>
+
+                </div>
+
+            </article>
+
+            <article class="area-item">
+
+                <div class="area-header">
+
+                    <span>
+
+                        <i class="fa-solid fa-database"></i>
+
+                        Banco de Dados
+
+                    </span>
+
+                    <strong>60%</strong>
+
+                </div>
+
+                <div class="area-progress">
+
+
+                    <div class="progress-fill progress-60"></div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <a href="#" class="btn-outline">
+            Ver todas as metas
+        </a>
+
+    </aside>
+
+    <!-- ======================================================
+        COLUNA CENTRAL
+    ======================================================= -->
+    <div class="center-column">
+
+                <!-- ======================================================
+            METAS DO MÊS
+        ======================================================= -->
+        <section class="month-card">
+
+            <div class="card-title">
+
+                <div class="title-left">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    <h2>Metas do Mês</h2>
+
+                </div>
+
+                <div class="calendar-navigation">
+
+                    <button type="button">
+
+                        <i class="fa-solid fa-chevron-left"></i>
+
+                    </button>
+
+                    <h3>Maio 2024</h3>
+
+                    <button type="button">
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="month-body">
+
+                <!-- LISTA DE METAS -->
+
+                <div class="tasks-list">
+
+                    <article class="task completed">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>Concluir curso de HTML e CSS</span>
+
+                    </article>
+
+                    <article class="task completed">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <span>Criar Projeto Portfólio v1</span>
+
+                    </article>
+
+                    <article class="task">
+
+                        <i class="fa-regular fa-circle"></i>
+
+                        <span>Estudar JavaScript (Básico)</span>
+
+                    </article>
+
+                    <article class="task">
+
+                        <i class="fa-regular fa-circle"></i>
+
+                        <span>Publicar 4 vídeos no YouTube</span>
+
+                    </article>
+
+                    <article class="task">
+
+                        <i class="fa-regular fa-circle"></i>
+
+                        <span>Ler 1 livro sobre Programação</span>
+
+                    </article>
+
+                </div>
+
+                <!-- CALENDÁRIO -->
+
+                <div class="calendar">
+
+                    <div class="week-days">
+
+                        <span>D</span>
+                        <span>S</span>
+                        <span>T</span>
+                        <span>Q</span>
+                        <span>Q</span>
+                        <span>S</span>
+                        <span>S</span>
+
+                    </div>
+
+                    <div class="calendar-grid">
+
+                        <span class="disabled">28</span>
+                        <span class="disabled">29</span>
+                        <span class="disabled">30</span>
+
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+
+                        <span>5</span>
+                        <span class="active purple">6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span class="active green">10</span>
+                        <span>11</span>
+
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span class="active purple">15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                        <span class="active blue">22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span>25</span>
+
+                        <span>26</span>
+                        <span>27</span>
+                        <span>28</span>
+                        <span>29</span>
+                        <span>30</span>
+                        <span class="active purple">31</span>
+                        <span class="disabled">1</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+                </section>
+
+                <section class="study-plan-card">
+
+            <div class="plan-title">
+                <h2>Plano de Estudos</h2>
+            </div>
+
+            <div class="plan-list">
+
+                <div class="plan-item done">
+                    <span>HTML & CSS</span>
+                    <strong>Concluído</strong>
+                </div>
+
+                <div class="plan-item progress">
+                    <span>JavaScript</span>
+                    <strong>Em andamento</strong>
+                </div>
+
+                <div class="plan-item">
+                    <span>React</span>
+                    <strong>Próximo</strong>
+                </div>
+
+                <div class="plan-item">
+                    <span>Node.js</span>
+                    <strong>Planejado</strong>
+                </div>
+
+                <div class="plan-item">
+                    <span>SQL</span>
+                    <strong>Planejado</strong>
+                </div>
+
+                <div class="plan-item">
+                    <span>Python Avançado</span>
+                    <strong>Planejado</strong>
+                </div>
+
+
+                <div class="plan-item">
+                    <span>SQL</span>
+                    <strong>Planejado</strong>
+                </div>
+
+            </div>
+
+        <div class="plan-progress">
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+
+            <span>42%</span>
+        </div>
+
+
+
+        </section>
+
+        
+
+    </div>
+    
+    <aside class="right-column">
+
+                <!-- ======================================================
+            PRÓXIMAS CONQUISTAS
+        ======================================================= -->
+        <section class="next-achievements">
+
+            <div class="card-title">
+
+                <div class="title-left">
+
+                    <h2>Próximas Conquistas</h2>
+
+                </div>
+
+            </div>
+
+            <div class="achievement-list">
+
+                <!-- Conquista -->
+                <article class="achievement-item">
+
+                    <div class="achievement-top">
+
+                        <div class="achievement-icon purple">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </div>
+
+                        <div class="achievement-text">
+
+                            <h3>Publicar 10º vídeo</h3>
+
+                            <p>Faltam apenas 2 vídeos</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="achievement-progress">
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill progress-80"></div>
+
+                        </div>
+
+                        <span>80%</span>
+
+                    </div>
+
+                </article>
+
+                <!-- Conquista -->
+                <article class="achievement-item">
+
+                    <div class="achievement-top">
+
+                        <div class="achievement-icon green">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+                        <div class="achievement-text">
+
+                            <h3>Finalizar 10 Projetos</h3>
+
+                            <p>Faltam apenas 2 projetos</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="achievement-progress">
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill progress-80"></div>
+
+                        </div>
+
+                        <span>80%</span>
+
+                    </div>
+
+                </article>
+
+                <!-- Conquista -->
+                <article class="achievement-item">
+
+                    <div class="achievement-top">
+
+                        <div class="achievement-icon orange">
+
+                            <i class="fa-solid fa-fire"></i>
+
+                        </div>
+
+                        <div class="achievement-text">
+
+                            <h3>60 Dias de Estudos</h3>
+
+                            <p>Faltam apenas 15 dias</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="achievement-progress">
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill progress-75"></div>
+
+                        </div>
+
+                        <span>75%</span>
+
+                    </div>
+
+                </article>
+
+                <!-- Conquista -->
+                <article class="achievement-item">
+
+                    <div class="achievement-top">
+
+                        <div class="achievement-icon orange">
+
+                            <i class="fa-solid fa-fire"></i>
+
+                        </div>
+
+                        <div class="achievement-text">
+
+                            <h3>60 Dias de Estudos</h3>
+
+                            <p>Faltam apenas 15 dias</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="achievement-progress">
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill progress-75"></div>
+
+                        </div>
+
+                        <span>75%</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        
+
+<!-- ======================================================
+    CONQUISTAS RECENTES
+====================================================== -->
+<section class="recent-achievements">
+
+    <div class="title">
+
+        <h2>Conquistas Recentes</h2>
+
+
+    </div>
+
+    <div class="recent-list">
+
+        <!-- Item 1 -->
+        <article class="recent-item">
+
+            <div class="recent-left">
+
+                <div class="recent-icon green">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+                <div class="recent-content">
+
+                    <h3>Curso HTML & CSS</h3>
+
+                    <p>Curso concluído com sucesso.</p>
+
+                </div>
+
+            </div>
+
+            <time>10 Mai</time>
+
+        </article>
+
+        <!-- Item 2 -->
+        <article class="recent-item">
+
+            <div class="recent-left">
+
+                <div class="recent-icon blue">
+
+                    <i class="fa-solid fa-laptop-code"></i>
+
+                </div>
+
+                <div class="recent-content">
+
+                    <h3>Portfólio v1</h3>
+
+                    <p>Primeira versão publicada.</p>
+
+                </div>
+
+            </div>
+
+            <time>08 Mai</time>
+
+        </article>
+
+        <!-- Item 3 -->
+        <article class="recent-item">
+
+            <div class="recent-left">
+
+                <div class="recent-icon purple">
+
+                    <i class="fa-solid fa-fire"></i>
+
+                </div>
+
+                <div class="recent-content">
+
+                    <h3>30 Dias de Estudos</h3>
+
+                    <p>Meta concluída com sucesso.</p>
+
+                </div>
+
+            </div>
+
+            <time>05 Mai</time>
+
+        </article>
+
+         <a href="#" class="recent-link">
+
+    Ver todas
+
+</a>
+    </div>
+
+</section>
+  
+</main>
+    
+
+    <footer class="footer">
+ <div class="footer-social">
+
+            <a href="https://www.youtube.com/@ProgramandoDo0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/Programando-do-0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@programandodo098" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+
+        </div>
+
+        <p>
+            © 2026 Programando do Zero • Criado por Manuel Bumba
+        </p>
+
+    </footer>
+
+</body>
+</html>

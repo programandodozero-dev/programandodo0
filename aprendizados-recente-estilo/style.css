@@ -1,0 +1,372 @@
+/* =========================
+   1. RESET E VARIÁVEIS
+========================= */
+
+@charset "UTF-8";
+:root {
+
+    /* Fundos */
+    --background-primary: #050A14;      /* Body */
+    --background-secondary: #0A1B3D;    /* Header, cards e seções */
+
+    /* Marca */
+    --primary-color: #00C8FF;           /* Azul Neon */
+    --secondary-color: #2196F3;         /* Azul Médio */
+
+    /* Textos */
+    --text-primary: #FFFFFF;
+    --text-secondary: #D9D9D9;
+
+    /* Header */
+    --header-bg: #0A1B3D;
+
+    /* Botões */
+    --button-primary: #00C8FF;
+    --button-secondary: #2196F3;
+
+    /* Hover */
+    --hover-color: #00C8FF;
+
+     /* Fontes */
+    --font-title: 'Montserrat', sans-serif;  /* Títulos */
+    --font-menu: 'Poppins', sans-serif;     /* Menu e Botões */
+    --font-text: 'Inter', sans-serif;     /* Textos, artigos e descrições */
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-text);
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+
+/* =========================
+   2. HEADER / NAVBAR
+========================= */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+    height: 90px;
+    padding: 0 40px;
+
+    background-color: transparent;
+}
+
+.logo img{
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-left: 0px;
+}
+
+.menu a{
+    position: relative;
+
+    text-decoration: none;
+    color: var(--text-primary);
+
+    font-family: var(--font-menu);
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: var(--primary-color);
+}
+
+
+/* =========================
+   3. HERO SECTION
+========================= */
+
+.hero{
+    max-width: 900px;
+    margin: 0 auto;
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(16, 49, 114, 0.25) 30%,
+        rgba(16, 30, 58, 0.473) 10%,
+        transparent 100%
+    );
+}
+
+
+
+h2, h3{
+    text-align: left;
+}
+
+
+
+
+p{
+    margin-top: 40px;
+    text-align: left;
+    line-height: 1.8;
+    margin: 20px 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.lista1{
+    list-style: none;
+    margin-right: 210px;
+}
+.lista2{
+    list-style: none;
+    margin-right: 260px;
+}
+.lista3{
+    margin-right: 180px;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   Tabela
+========================= */
+.tabela-dados{
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabela-dados th,
+.tabela-dados td{
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.tabela-dados th{
+    background-color: #103172;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   Fundo do código
+========================= */
+
+.codigo{
+    background: #0d1b3d;
+    border-left: 4px solid #3b82f6;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 20px auto;
+    font-family: Consolas, monospace;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    text-align: center;
+
+    padding: 25px 20px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    
+   margin-top: 10px;
+
+    
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-bottom: 15px;
+}
+
+.footer-social a{
+    color: var(--text-secondary);
+
+    font-size: 1.3rem;
+
+    transition: .3s;
+}
+
+.footer-social a:hover{
+    color: var(--primary-color);
+}
+
+.footer p{
+    color: var(--text-secondary);
+
+    font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   Responsividade do header
+========================= */
+
+/* =========================
+   Tablet (até 1024px)
+========================= */
+@media (max-width: 1024px){
+
+    .navbar{
+        padding: 0 20px;
+    }
+
+    .logo img{
+        width: 180px;
+    }
+
+    .menu{
+        margin-left: 0;
+        gap: 15px;
+    }
+
+    .menu a{
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   Celular (até 768px)
+========================= */
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 1px;
+    }
+
+    .logo img{
+        width: 160px;
+    }
+
+    .menu{
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px;
+    }
+}
+
+/* =========================
+  Celular pequeno (até 480px)
+========================= */
+@media (max-width: 480px){
+
+    .navbar{
+        padding: 15px;
+    }
+
+    .logo img{
+        width: 130px;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
+    }
+
+    .menu a{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+
+### 🏆 Para títulos principais
+
+* **Montserrat** (minha principal recomendação)
+* Poppins
+* Outfit
+* Exo 2
+
+Essas transmitem um visual moderno, tecnológico e profissional.
+
+---
+
+### 📝 Para subtítulos e menus
+
+* Poppins
+* Montserrat
+* Inter
+
+São muito legíveis tanto no computador quanto no celular.
+
+---
+
+### 📖 Para textos e artigos
+
+* Inter
+* Roboto
+* Open Sans
+
+Ótimas para leitura prolongada.
+
+---
+
+### 🎯 O que eu usaria no teu projeto
+
+**Logo e títulos**
+→ Montserrat Bold / ExtraBold
+
+**Menu e botões**
+→ Poppins Medium
+
+**Textos e artigos**
+→ Inter Regular
+
+Isso cria uma identidade moderna, limpa e alinhada com:
+
+* Fundo escuro
+* Azul neon
+* Programação
+* Tecnologia
+* Evolução pessoal
+
+### ⭐ Minha escolha para "Programando do Zero | Minha Trajetória"
+
+Se tivesse que escolher apenas uma fonte para quase todo o site, escolheria:
+
+**Montserrat**
+
+Porque combina muito bem com o teu logo, com a paleta azul/preto e com a proposta de um projeto de programação moderno. Ela passa uma sensação de crescimento, tecnologia e profissionalismo sem parecer excessivamente corporativa.

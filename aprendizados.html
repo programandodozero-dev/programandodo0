@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda variáveis e tipos de dados em Python com exemplos práticos. Aula gratuita para iniciantes no Programando do Zero.">
+
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="aprendizados-estilo/style.css">
+    <title>Aprendizados</title>
+</head>
+<body>
+    
+
+    <header>
+
+        <div class="hero-wrapper">
+
+            <nav class="navbar">
+
+                <div class="logo">
+
+                    <a href="index.html">
+                        <img src="aprendizados-estilo/imagens/LOGO-Quadrado-SEM.png" alt="Logo Programando do Zero">
+                    </a>
+                    
+                </div>
+
+                <ul class="menu">
+
+                    <li><a href="index.html">INÍCIO</a></li>
+
+                    <li><a href="comece.html">COMECE POR AQUI</a></li>
+
+                    <li><a href="aprendizados.html" class="active">APRENDIZADOS</a></li>
+
+                    <li><a href="projetos.html">PROJETOS</a></li>
+
+                    <li><a href="blog1.html">BLOG</a></li>
+
+                    <li><a href="recursos.html">RECURSOS</a></li>
+
+                    <li><a href="meta.html">METAS</a></li>
+
+                    <li><a href="contato.html">CONTATO</a></li>
+
+                </ul>
+
+                <div class="header-actions">
+
+                    <button id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <button id="theme-btn">
+                        <i class="fa-regular fa-moon"></i>
+                    </button>
+
+                </div>
+
+            </nav>
+
+           
+
+        </div>
+
+    </header>
+
+<main>
+      
+<!-- HERO -->
+<section class="learn-hero">
+
+    <div class="learn-content">
+
+        <div class="breadcrumb">
+                <a href="comece.html">COMECE POR AQUI</a>
+                 <i class="fa-solid fa-chevron-right"></i>
+                <p>APRENDIZADOS</p>
+            </div>
+
+        <h1>Aprendizados</h1>
+
+        <p>
+            Aqui você encontra todo o conteúdo que estou estudando e
+            compartilhando. Do básico ao avançado, tudo organizado por
+            linguagens e tecnologias.
+        </p>
+
+        <div class="hero-stats">
+
+            <div class="stat-card">
+                <i class="fa-solid fa-book-open"></i>
+
+                <div>
+                    <h3>6</h3>
+                    <p>Áreas de Estudo</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-code"></i>
+
+                <div>
+                    <h3>120+</h3>
+                    <p>Aulas Publicadas</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <i class="fa-solid fa-chart-line"></i>
+
+                <div>
+                    <h3>75%</h3>
+                    <p>Jornada Concluída</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="learn-bg"></div>
+
+</section>
+
+<!-- CONTEÚDO -->
+<section class="learning-section">
+
+    <!-- SIDEBAR -->
+   <aside class="sidebar">
+
+        <div class="sidebar-title">
+
+            <i class="fa-solid fa-grip"></i>
+
+            <h3>TODAS AS ÁREAS</h3>
+
+        </div>
+
+    <ul>
+
+        <li>
+            <i class="fa-brands fa-python"></i>
+            <span>Python</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </li>
+
+        <li>
+            <i class="fa-solid fa-desktop"></i>
+            <span>Desenvolvimento Web</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </li>
+
+        <li>
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </li>
+
+        <li>
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </li>
+
+        <li>
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </li>
+
+        <li>
+            <i class="fa-solid fa-database"></i>
+            <span>Banco de Dados</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </li>
+
+        <li>
+            <i class="fa-brands fa-react"></i>
+            <span>React</span>
+            <i class="fa-solid fa-chevron-right"></i>
+        </li>
+
+    </ul>
+
+</aside>
+
+
+    <!-- ÁREA PRINCIPAL -->
+    <div class="learning-content">
+
+        <div class="section-title">
+
+            <h2>Minhas Trilhas de Estudo</h2>
+
+            <p>
+                Cada trilha representa uma tecnologia que estou aprendendo.
+            </p>
+
+        </div>
+
+        <div class="cards-grid">
+
+            <!-- PYTHON -->
+           <article class="course-card">
+
+                <div class="card-top">
+
+                    <i class="fa-brands fa-python"></i>
+
+                    <div>
+                        <h3>Python</h3>
+
+                        <p>
+                            Minha principal linguagem de estudos.
+                            Do básico ao avançado.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="progress">
+
+                    <div class="progress-bar python"></div>
+
+                    <span>90%</span>
+
+                </div>
+
+                <div class="card-stats">
+
+                    <div>
+                        <strong>45</strong>
+                        <span>Aulas</span>
+                    </div>
+
+                    <div>
+                        <strong>12</strong>
+                        <span>Projetos</span>
+                    </div>
+
+                    <div>
+                        <strong>8</strong>
+                        <span>Artigos</span>
+                    </div>
+
+                </div>
+
+                <a href="#" class="btn-card btn-python">
+                    Ver Conteúdo
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- WEB -->
+            <article class="course-card">
+
+                <div class="card-top">
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    <div>
+                        <h3>Desenvolvimento Web</h3>
+
+                        <p>
+                            Base para criação de sites modernos e aplicações web.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="progress">
+
+                    <div class="progress-bar web"></div>
+
+                    <span>70%</span>
+
+                </div>
+
+                <div class="card-stats">
+
+                    <div>
+                        <strong>18</strong>
+                        <span>Aulas</span>
+                    </div>
+
+                        <div>
+                            <strong>5</strong>
+                            <span>Projetos</span>
+                        </div>
+
+                    <div>
+                        <strong>3</strong>
+                        <span>Artigos</span>
+                    </div>
+
+                </div>
+
+                <a href="#" class="btn-card btn-web">
+                    Ver Conteúdo
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+            <!-- HTML -->
+           <article class="course-card">
+
+                <div class="card-top">
+
+                    <i class="fa-brands fa-html5 html-icon"></i>
+
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Estruturação de páginas web com HTML5.</p>
+                    </div>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar html"></div>
+                    <span>100%</span>
+                </div>
+
+                  <a href="#" class="btn-card btn-html">
+                    Ver Conteúdo
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- CSS -->
+            <article class="course-card">
+
+                <div class="card-top">
+
+                    <i class="fa-brands fa-css3-alt"></i>
+
+                    <div>
+                        <h3>CSS3</h3>
+
+                        <p>
+                            Estilização, layouts responsivos e animações modernas.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar css"></div>
+                    <span>80%</span>
+                </div>
+
+                <a href="#" class="btn-card btn-css">
+                        Ver Conteúdo
+                        <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <!-- JS -->
+            <article class="course-card">
+
+                <div class="card-top">
+
+                    <i class="fa-brands fa-js"></i>
+
+                    <div>
+                        <h3>JavaScript</h3>
+
+                        <p>
+                            Linguagem responsável pela interatividade das páginas.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar javascript"></div>
+                    <span>40%</span>
+                </div>
+
+                <a href="#" class="btn-card btn-javascript">
+                    Ver Conteúdo
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+            <!-- BANCO -->
+                        <article class="course-card">
+
+                <div class="card-top">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <div>
+                        <h3>Banco de Dados</h3>
+
+                        <p>
+                            Organização, armazenamento e consulta de informações.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar database"></div>
+                    <span>25%</span>
+                </div>
+
+                <a href="#" class="btn-card btn-database">
+                    Ver Conteúdo
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+                    </div>
+
+             </div>
+
+        </section>
+
+
+<!-- BANNER FINAL -->
+<section class="learning-banner">
+
+    <div>
+
+        <h2>
+            
+            Sempre aprendendo e evoluindo
+        </h2>
+
+        <p>
+            Novos conteúdos, anotações e projetos são adicionados
+            conforme avanço na minha jornada.
+        </p>
+
+    </div>
+
+    <a href="#">
+        Ver Metas e Evolução
+    </a>
+
+</section>
+
+
+</main>
+
+
+   
+    
+    <footer class="footer">
+
+         <div class="footer-social">
+
+            <a href="https://www.youtube.com/@ProgramandoDo0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/Programando-do-0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@programandodo098" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+
+        </div>
+        <p>
+            © 2026 Programando do Zero • Criado por Manuel Bumba
+        </p>
+
+    </footer>
+</body>
+</html>

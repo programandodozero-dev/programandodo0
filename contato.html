@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda variáveis e tipos de dados em Python com exemplos práticos. Aula gratuita para iniciantes no Programando do Zero.">
+
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="contato-estilo/style.css">
+    <title>projetos</title>
+</head>
+<body>
+       
+  <header>
+
+    <div class="hero-wrapper">
+
+      
+
+      <nav class="navbar">
+
+        <div class="logo">
+
+        <a href="index.html">
+            <img src="contato-estilo/imagens/LOGO-Quadrado-SEM.png" alt="Logo Programando do Zero">
+        </a>
+                    
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="index.html">INÍCIO</a></li>
+
+            <li><a href="comece.html">COMECE POR AQUI</a></li>
+
+            <li><a href="aprendizados.html">APRENDIZADOS</a></li>
+
+            <li><a href="projetos.html">PROJETOS</a></li>
+
+            <li><a href="blog1.html">BLOG</a></li>
+
+            <li><a href="recursos.html">RECURSOS</a></li>
+
+            <li><a href="meta.html">METAS</a></li>
+
+            <li><a href="conta" class="active">CONTATO</a></li>
+
+        </ul>
+
+        <div class="header-actions">
+
+          <button id="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <button id="theme-btn">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+      <main class="contact-page">
+
+    <!-- HERO -->
+    <section class="contact-hero">
+
+        <div class="hero-left">
+
+           <div class="breadcrumb">
+                <a href="meta.html">METAS</a>
+                <i class="fa-solid fa-chevron-left"></i>
+                <p>CONTATO</p>
+            </div>
+
+
+            <h1>
+                Entre em <span class="gradient-text">Contato</span>
+            </h1>
+
+            <p class="hero-description">
+                Tem alguma dúvida, sugestão, parceria ou quer apenas trocar uma ideia?
+                Preencha o formulário ou me encontre nas redes sociais!
+            </p>
+
+            <div class="hero-highlights">
+
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div>
+                        <h3>Resposta rápida</h3>
+                        <p>Retorno em até 48h</p>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div>
+                        <h3>Ambiente seguro</h3>
+                        <p>Seus dados protegidos</p>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div>
+                        <h3>Vamos crescer juntos</h3>
+                        <p>Toda mensagem é importante!</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="hero-illustration">
+
+                <img
+                    src="meta-estilo/imagens/programador.png" alt="Contato"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTEÚDO -->
+    <section class="contact-content">
+
+        <!-- FORMULÁRIO -->
+        <div class="contact-form-card">
+
+            <div class="card-header">
+
+
+                <div>
+                    <h2>Envie sua mensagem</h2>
+
+                    <p>
+                        Preencha o formulário abaixo e entrarei em contato o mais breve possível.
+                    </p>
+                </div>
+
+            </div>
+
+            <form>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Nome completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Seu nome"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="seu@email.com"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Assunto
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="Sobre o que é sua mensagem?"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Mensagem
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="10"
+                        placeholder="Escreva sua mensagem aqui..."
+                    ></textarea>
+
+                </div>
+
+                <div class="form-footer">
+
+                    <button type="submit">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Enviar mensagem
+
+                    </button>
+
+                    <div class="security-info">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <span>
+                            Seus dados estão 100% protegidos.
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+                <!-- SIDEBAR -->
+        <aside class="contact-sidebar">
+
+            <!-- REDES SOCIAIS -->
+            <div class="social-card">
+
+                <div class="card-title">
+
+                    <h2>Redes Sociais</h2>
+
+                </div>
+
+                <div class="social-list">
+
+                    <div class="social-item">
+
+                        <div class="social-info">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                            <div>
+                                <h3>YouTube</h3>
+                                <p>Acompanhe os vídeos e tutoriais</p>
+                            </div>
+
+                        </div>
+
+                        <a href="https://www.youtube.com/channel/UCCJd1zmuFBoFcL8dxV7dYrg" target="_blank" rel="noopener noreferrer">
+                            Programando do Zero | Minha Trajetória
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="social-item">
+
+                        <div class="social-info">
+
+                            <i class="fa-brands fa-github"></i>
+
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Veja meus projetos e códigos</p>
+                            </div>
+
+                        </div>
+
+                        <a href="https://github.com/Programando-do-0" target="_blank" rel="noopener noreferrer"">
+                            Programando do Zero
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="social-item">
+
+                        <div class="social-info">
+
+                            <i class="fa-brands fa-tiktok"></i>
+
+                            <div>
+                                <h3>TikTok</h3>
+                                <p>Conteúdos rápidos e dicas</p>
+                            </div>
+
+                        </div>
+
+                        <a href="https://www.tiktok.com/@programandodo098" target="_blank" rel="noopener noreferrer">
+                           Programando do Zero
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="social-item">
+
+                        <div class="social-info">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                            <div>
+                                <h3>Instagram</h3>
+                                <p>Bastidores e rotina de estudos</p>
+                            </div>
+
+                        </div>
+
+                        <a href="#">
+                            @programandodozero
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- OUTRAS FORMAS -->
+            <div class="contact-info-card">
+
+                <div class="card-title">
+
+                    <h2>Outras formas de contato</h2>
+
+                </div>
+
+                <div class="contact-info-item">
+
+                    <div class="left">
+
+                        <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>E-mail</h3>
+
+                            <p>
+                                programandodozero1@gmail.com
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <button>
+                        Enviar e-mail
+                    </button>
+
+                </div>
+
+                <div class="contact-info-item">
+
+                    <div class="left">
+
+                        <div class="icon">
+                            <i class="fa-regular fa-envelope-open"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Resposta</h3>
+
+                            <p>
+                                Normalmente respondo em até 48h
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <span class="response-badge">
+                        Até 48h
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+          <!-- LOCALIZAÇÃO -->
+    <section class="location-section">
+
+        <div class="location-card">
+
+            <div class="location-content">
+
+                <div class="location-title">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <h2>Localização</h2>
+
+                </div>
+
+                <h3>Angola</h3>
+
+                <p>
+                    Criando conteúdo de qualquer lugar
+                    com foco e disciplina. 
+                </p>
+
+            </div>
+
+            <div class="location-map">
+
+        <img
+            src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/globe.svg" alt="Globo" width="80" height="80">
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+        
+    <footer class="footer">
+
+        <div class="footer-social">
+
+            <a href="https://www.youtube.com/@ProgramandoDo0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/Programando-do-0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@programandodo098" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+
+        </div>
+
+        <p>
+            © 2026 Programando do Zero • Criado por Manuel Bumba
+        </p>
+
+    </footer>
+</body>
+</html>

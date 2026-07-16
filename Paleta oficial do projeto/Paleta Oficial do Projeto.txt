@@ -1,0 +1,73 @@
+Se essa paleta veio diretamente do teu logo através do Adobe Color, então ela representa melhor a identidade visual real da marca do que a paleta que tínhamos criado anteriormente.
+
+🎨 Paleta Oficial do Projeto
+Função	Cor
+Azul Principal	#2138BF
+Fundo Principal	#02050D
+Azul Secundário	#0B79D9
+Azul Destaque	#07B0F2
+Azul Neon / Ação	#07C7F2
+O que cada cor transmite
+
+#02050D
+
+Fundo muito escuro
+Tecnologia
+Profissionalismo
+Contraste forte
+
+#2138BF
+
+Cor principal da marca
+Confiança
+Estabilidade
+Identidade visual
+
+#0B79D9
+
+Navegação
+Cards
+Elementos secundários
+
+#07B0F2
+
+Destaques
+Ícones
+Links
+
+#07C7F2
+
+Botões principais
+Chamadas para ação
+Elementos que precisam chamar atenção
+Comparando com a paleta anterior
+
+A anterior era:
+
+Preto
+Azul escuro
+Azul neon
+
+A do Adobe Color é mais refinada porque foi extraída do próprio logo.
+
+Por isso, eu adotaria esta como a paleta oficial do projeto.
+
+📒 Anotação para o caderno
+
+Projeto: Programando do Zero | Minha Trajetória
+
+Paleta Oficial
+
+Fundo Principal → #02050D
+Cor Principal → #2138BF
+Cor Secundária → #0B79D9
+Cor de Destaque → #07B0F2
+Cor de Ação → #07C7F2
+
+Estilo Visual
+
+Dark Mode
+Tecnológico
+Moderno
+Profissional
+Focado em programação e evolução
