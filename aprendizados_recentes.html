@@ -39,7 +39,7 @@
                 <h2>O que são variáveis?</h2>
 
                 <p>
-                    Variáveis são espaços utilizados para armazenar informações 
+                    <strong>Variáveis</strong> são espaços utilizados para armazenar informações 
                     dentro de um programa.
                 </p>
 
@@ -62,7 +62,7 @@
 
                 <h2>Como criar variáveis</h2>
 
-                <p>Criar uma variável em Python é simples. Basta escolher um nome e atribuir um valor.</p>
+                <p><strong>Criar uma variável em Python é simples</strong>. Basta escolher um nome e atribuir um valor.</p>
 
                 <pre class="codigo"><code>   nome = "João"
    idade = 20
@@ -83,7 +83,7 @@
                     
                 </p>
 
-                <h3>String (str)</h3>
+                <h3><strong>String (str)</strong></h3>
                 <p>Utilizada para armazenar textos.</p>
 
 
@@ -92,20 +92,20 @@ cidade = "Luanda"</code></pre>
 
                 <p>Tudo que estiver entre aspas é considerado texto.</p>
 
-                <h3>Inteiro (int)</h3>
+                <h3><strong>Inteiro (int)</strong></h3>
 
                 <p>Utilizado para números sem casas decimais.</p>
 
                 <pre class="codigo"><code>idade = 18
 ano = 2025</code></pre>
 
-                <h3>Decimal (float)</h3>
+                <h3><strong>Decimal (float)</strong></h3>
                 <p>Utilizado para números com casas decimais.</p>
 
                 <pre class="codigo"><code>altura = 1.70
 peso = 65.5</code></pre>
 
-                    <h3>Booleano (bool)</h3>
+                    <h3><strong>Booleano (bool)</strong></h3>
                     <p>O tipo booleano possui apenas dois valores:</p>
 
                 <ol class="lista">
@@ -126,7 +126,6 @@ aprovado = False</code></pre>
  idade = 20
  print(nome)
  print(idade)</code></pre>
-
                 
                     <ol class="lista">
                         <li type="circle">nome = "João" --> Guarda o nome João. </li>
@@ -202,26 +201,26 @@ print("Cidade:", cidade)</code></pre>
             <section class="hero" id="entrada-dados">
 
                 <h1>Entrada de Dados (input)</h1>
-                <h2>O que é input()?</h2>
+                <h2>O que é input( )?</h2>
 
                 <p>
-                    A função input() é utilizada para receber informações digitadas
+                    <strong>A função input()</strong> é utilizada para receber informações digitadas
                     pelo usuário durante a execução do programa.
                 </p>
 
                 <p>
                     Enquanto uma variável comum guarda um valor definido pelo programador,
-                    o input() permite que o próprio usuário forneça esse valor.
+                    o <strong>input()</strong> permite que o próprio usuário forneça esse valor.
                 </p>
 
-                <p>Exemplo:</p>
+                <p>Exemplo</p>
 
                 <pre class="codigo"><code>nome = input("Digite o seu nome: ")</code></pre>
 
                 <p>Quando o programa for executado, ele exibirá a mensagem:</p>
 
                 <p>
-                    Digite o seu nome: <br>
+                    <span class="destaque">Digite o seu nome:</span> <br>
                     E ficará aguardando o usuário digitar uma resposta.
                 </p>
 
@@ -231,11 +230,11 @@ print("Cidade:", cidade)</code></pre>
 
                 <pre class="codigo"><code>nome = input("Digite o seu nome: ")</code></pre>
 
-                <p>
-                    input() --> recebe um valor digitado pelo usuário. <br>
-                    "Digite o seu nome: " --> é a mensagem exibida na tela. <br>
-                    O valor digitado é armazenado na variável nome.
-                </p>
+                <ol class="lista">
+                        <li type="circle">input() --> recebe um valor digitado pelo usuário.</li> 
+                        <li type="circle">"Digite o seu nome: " --> é a mensagem exibida na tela. </li>
+                        <li type="circle">O valor digitado é armazenado na variável nome.</li>
+                </ol>
 
                 <h2>Armazenando a entrada em variáveis</h2>
 
@@ -244,47 +243,110 @@ print("Cidade:", cidade)</code></pre>
                     variáveis para serem utilizados posteriormente.
                 </p>
 <pre class="codigo"><code>nome = input("Digite o seu nome: ")
-    cidade = input("Digite a sua cidade: ")</code></pre>
-
-                <p>
-                    nome = input("Digite o seu nome: ") --> Solicita o nome e armazena 
-                    a resposta na variável nome. <br>
-                    cidade = input("Digite a sua cidade: ") --> Solicita a cidade e
-                    armazena a resposta na variável cidade.
-                </p>
+cidade = input("Digite a sua cidade: ")</code></pre>
+             
+                    <ol class="lista">
+                        <li type="circle">input("Digite o seu nome: ") --> Solicita o nome e armazena a resposta na variável nome.</li> 
+                        <li type="circle">input("Digite a sua cidade: ") --> Solicita a cidade e armazena a resposta na variável cidade.</li>
+                    </ol>
+                
 
                 <h2>Exibindo os dados recebidos</h2>
 
                 <p>Depois de receber os dados, podemos exibi-los utilizando a função print().</p>
 
-<pre class="codigo"><code>                        nome = input("Digite o seu nome: ")
+<pre class="codigo"><code>nome = input("Digite o seu nome: ")
 print(nome)</code></pre>
 
+         
+                    <ol class="lista">
+                        <li type="circle">nome = input("Digite o seu nome: ") --> Recebe o nome digitado pelo usuário. <br></li>
+                        <li type="circle">print(nome) --> Mostra na tela o valor armazenado na variável nome.</li>
+                    </ol>
+
+                <h3 >Exemplo Prático 01</h3>
+
+                <p>Vamos criar um pequeno cadastro.</p>
+
+<pre class="codigo"><code>nome = input("Digite o seu nome: ")
+idade = input("Digite a sua idade: ")
+cidade = input("Digite a sua cidade: ") <br>
+print("Nome:", nome)
+print("Idade:", idade)
+print("Cidade:", cidade)</code> </pre>
+
                 <p>
-                    nome = input("Digite o seu nome: ") --> Recebe o nome digitado pelo usuário. <br>
-                    print(nome) --> Mostra na tela o valor armazenado na variável nome.
+                    Resultado: <br>
+                    Nome: Manuel <br>
+                    Idade: 20 <br>
+                    Cidade: Luanda
                 </p>
 
-                <h3 >Exemplo Prático</h3>
+                <h3>Exemplo Prático 02</h3>
 
-                Vamos criar um pequeno cadastro.
+                <p>Recebendo informações sobre um curso.</p>
 
-                nome = input("Digite o seu nome: ")
-                idade = input("Digite a sua idade: ")
-                cidade = input("Digite a sua cidade: ")
+<pre class="codigo"><code>curso = input("Qual curso está estudando? ")
+nivel = input("Qual é o seu nível? ") <br>
+print("Curso:", curso)
+print("Nível:", nivel)</code></pre>
+                
+                <p>
+                    Resultado: <br>
+                    Curso: Python <br>
+                    Nível: Iniciante
+                </p>
 
-                print("Nome:", nome)
-                print("Idade:", idade)
-                print("Cidade:", cidade)
-                Possível execução
-                Digite o seu nome: Manuel
-                Digite a sua idade: 20
-                Digite a sua cidade: Luanda
+                <h2>Exercícios</h2>
+                <h3>Exercício 1</h3>
 
-                Nome: Manuel
-                Idade: 20
-                Cidade: Luanda
+                <p>Peça ao usuário para digitar o seu nome e mostre a resposta na tela.</p>
 
+                <h3>Exercício 2</h3>
+
+                <p>
+                    Peça ao usuário para informar: <br>
+                    Nome <br>
+                    Cidade <br>
+                    Depois exiba as duas informações.
+                </p>
+
+                <h3>Exercício 3</h3>
+
+                <p>
+                    Crie um programa que pergunte: <br>
+                    Nome <br>
+                    Idade <br>
+                    Profissão <br>
+                    Em seguida mostre todos os dados organizados.
+                </p>
+                
+                <h2>Desafio</h2>
+
+                <p>
+                    Crie um programa que faça um mini cadastro de aluno. <br>
+                    O programa deve solicitar: <br>
+                    Nome <br>
+                    Idade <br>
+                    Curso <br>
+                    Depois exiba todas as informações da seguinte forma:
+                </p>
+
+<pre>===== CADASTRO =====
+Nome: João
+Idade: 18
+Curso: Python
+===================</pre>
+                
+            <h2>Resumo</h2>
+            <p>Aprendemos:</p>
+            <p>
+                O que é a função input(). <br>
+                Como receber dados digitados pelo usuário. <br>
+                Como armazenar esses dados em variáveis. <br>
+                Como exibir as informações utilizando print(). <br>
+                Como criar pequenos programas interativos. 
+            </p>
 
 
 
