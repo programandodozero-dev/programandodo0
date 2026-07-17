@@ -716,7 +716,6 @@ body{
 }
 
 
-
 .footer{
     text-align: center;
 
@@ -856,6 +855,7 @@ body{
    MOBILE PEQUENO (480px)
 ========================= */
 
+
 @media (max-width: 480px){
 
     .hero-content h1{
@@ -887,7 +887,6 @@ body{
         font-size: 2rem;
     }
 }
-
 
 
 
