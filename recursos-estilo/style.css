@@ -831,62 +831,60 @@ body{
 
 @media (max-width:768px){
 
-    html,
-    body{
-        overflow-x:hidden;
-    }
-
-    .navbar{
-        flex-direction:column;
-        height:auto;
-        padding:20px;
-        gap:15px;
+       .navbar{
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
     }
 
     .logo img{
-        width:160px;
+        width: 160px;
     }
 
     .menu{
-        margin-left:0;
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:12px;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
-    .menu a{
-        font-size:13px;
-    }
-
-    .header-actions{
-        justify-content:center;
-        width:100%;
-    }
+   
 }
 
-@media (max-width:480px){
+/* =========================
+   MOBILE PEQUENO (480px)
+========================= */
 
-    .navbar{
-        padding:15px;
-        gap:12px;
+@media (max-width: 480px){
+
+    .hero-content h1{
+        font-size: 1.6rem;
     }
 
-    .logo img{
-        width:140px;
+    .welcome{
+        font-size: 1rem;
     }
 
-    .menu{
-        gap:10px;
-        font-size:12px;
+    .hero-image img{
+        max-width: 300px;
     }
 
-    .menu a{
-        font-size:12px;
+    .card{
+        padding: 20px;
     }
 
-    .header-actions button{
-        width:36px;
-        height:36px;
+    .stat-card{
+        padding: 20px;
+    }
+
+    .roadmap-left,
+    .roadmap-right{
+        padding: 20px;
+    }
+
+    .roadmap-right h2{
+        font-size: 2rem;
     }
 }
 

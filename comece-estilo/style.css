@@ -855,14 +855,21 @@ body{
         flex-direction: column;
         height: auto;
         padding: 20px;
-        gap: 12px;
+        gap: 20px;
     }
 
-    .menu{
-        margin-left: 0;
+    
+    .logo img{
+        width: 160px;
+    }
+
+     .menu{
+        margin: 0;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 20px;
     }
+
 
     .menu a{
         font-size: 13px;
