@@ -348,29 +348,1551 @@ Curso: Python
                 Como criar pequenos programas interativos. 
             </p>
 
-
-
-
-
             </section>
 
-            <section id="operacoes-matematicas">
+            <section class="hero" id="operacoes-matematicas">
                     <h1>Operações Matemáticas</h1>
 
+                    <h2>O que são operações matemáticas?</h2>
+
+                    <p>
+                        <strong>As operações matemáticas</strong> permitem realizar cálculos dentro dos programas.
+                        Em Python, podemos utilizar operadores matemáticos para somar, subtrair, multiplicar, dividir e muito mais.
+                    </p>
+
+                
+                    <h3><strong>Soma (+)</strong></h3>
+
+                    <p>O operador '+' é utilizado para somar valores.</p>
+
+                    <pre class="codigo"><code>numero1 = 10
+numero2 = 5 
+resultado = numero1 + numero2 <br>
+print(resultado)</code></pre>
+
+                    <ol class="lista">
+                        <li type="circle">numero1 = 10 --> Guarda o valor 10.</li>
+                        <li type="circle">numero2 = 5 --> Guarda o valor 5.</li>
+                        <li type="circle">resultado = numero1 + numero2 --> Soma os dois valores e guarda o resultado.</li>
+                        <li type="circle">print(resultado) --> Mostra o resultado na tela.</li>
+                    </ol>
+                    <p>
+                        Resultado <br>
+                        15
+                    </p>
+
+                    <h3><strong>Subtração (-)</strong></h3>
+
+                    <p>O operador '-' é utilizado para subtrair valores.</p>
+
+                    <pre class="codigo"><code>numero1 = 10
+numero2 = 5 
+resultado = numero1 - numero2 <br>
+print(resultado)</code></pre>
+
+                    <p>
+                        Resultado <br>
+                        5 
+                    </p>
+
+                    <h3><strong>Multiplicação (*)</strong></h3>
+
+                    <p>O operador '*' é utilizado para multiplicar valores.</p>
+
+                    <pre class="codigo"><code>numero1 = 10
+numero2 = 5 
+resultado = numero1 * numero2 <br>
+print(resultado)</code></pre>
+                   
+        <p>
+            Resultado <br>
+            50
+        </p>
+
+                  <h3><strong>Divisão (/)</strong></h3>
+
+                <p>O operador '/' é utilizado para dividir valores.</p>
+
+                <pre class="codigo"><code>numero1 = 10
+numero2 = 5 
+resultado = numero1 / numero2 <br>
+print(resultado)</code></pre>
+                     <p>
+                         Resultado <br>
+                         5.0 <br>
+                        Observe que a divisão normalmente retorna um número decimal.
+                     </p>
+
+
+                    <h3><strong>Potência (**)</strong></h3>
+
+                    <p>O operador '**' é utilizado para calcular potências.</p>
+
+                   
+                    <pre class="codigo"><code>numero = 2
+resultado = numero ** 3
+print(resultado)</code></pre>
+                  
+                <p>
+                    2 ** 3 <br>
+                    Significa: 2 × 2 × 2  <br>
+
+                    Resultado: 8
+                </p>
+
+                  <h3><strong>Resto da Divisão (%)</strong></h3>
+
+                    <p>O operador '%' retorna o resto de uma divisão.</p>
+
+                   <pre class="codigo"><code>numero1 = 10
+numero2 = 3
+resultado = numero1 % numero2 <br>
+print(resultado)</code></pre>
+                
+                    <p>
+                        10 ÷ 3 = 3 <br>
+                        Resto = 1 <br>
+                        Resultado: 1
+                    </p>
+                 
+                     <h3>Conversão com int()</h3>
+
+                    <p>Até agora aprendemos que o '<strong>input()</strong>' recebe tudo como texto.</p>
+
+                    <p>Veja o exemplo:</p>
+
+                    <pre class="codigo"><code>idade = input("Digite sua idade: ")
+print(idade)</code></pre>
+
+                    <p>
+                        Se o usuário digitar: <br>
+                        20
+                    </p>
+                   
+
+                    <p>
+                        O valor recebido será tratado como <strong>texto</strong>. <br>
+                        Para converter para número inteiro utilizamos 'int()'.
+                    </p>
+
+                   
+                    <pre class="codigo"><code>idade = int(input("Digite sua idade: "))
+print(idade)</code></pre>
+
+                  
+                    <ol class="lista"><li type="circle">int() --> Converte um valor para inteiro.</li></ol>
+
+                    <p>Exemplos:</p>
+
+                    <pre class="codigo"><code>numero = int("10")</code></pre>
+                   
+                    <p>
+                        Resultado: 10
+                    </p>
+                   
+                   <h3>Conversão com float()</h3>
+
+                    <p>Para números decimais utilizamos <strong>'float()'</strong>.</p>
+
+                    
+                    <pre class="codigo"><code>altura = float(input("Digite sua altura: "))
+print(altura)</code></pre>
+                    
+
+                    <ol class="lista"><li type="circle">float() --> Converte um valor para decimal.</li></ol>
+
+                    <p>Exemplo:</p>
+
+                    <pre class="codigo"><code> preco = float("10.50")</code></pre>
+                    
+                    <p>Resultado: 10.5</p>
+                    
+
+                  <h3>Exemplo 01</h3>
+
+                  <p>Vamos criar uma calculadora de soma.</p>
+
+                    
+                    <pre class="codigo"><code>numero1 = int(input("Digite o primeiro número: "))
+numero2 = int(input("Digite o segundo número: "))
+resultado = numero1 + numero2 <br>
+print("Resultado:", resultado)</code></pre>    
+
+                    <p>
+                        Possível execução <br>
+                        Digite o primeiro número: 10 <br>
+                        Digite o segundo número: 5 <br>
+                        Resultado: 15
+                    </p>
+                   
+                    <h3>Exemplo 02</h3>
+
+                    <p>Calculando a média de duas notas.</p>
+
+                   <pre class="codigo"><code>nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+media = (nota1 + nota2) / 2 <br>
+print("Média:", media)</code></pre>
+
+                   <p>
+                        Possível execução <br>
+                        Digite a primeira nota: 15 <br>
+                        Digite a segunda nota: 18 <br>
+                        Média: 16.5
+                   </p>
+                    
+
+                    <h2>Exercícios</h2>
+
+                    <h3>Exercício 01</h3>
+
+                    <p>Crie um programa que solicite dois números e exiba a soma deles.</p>
+
+                    <h3>Exercício 02</h3>
+
+                    <p>
+                        Crie um programa que solicite dois números e exiba: <br>
+                        * Soma <br>
+                        * Subtração <br>
+                        * Multiplicação <br>
+                        * Divisão
+                    </p>
+
+                  <h3>Exercício 03</h3>
+
+                    <p>
+                        Peça ao usuário a largura e o comprimento de um terreno. <br>
+                        Calcule a área usando:
+                    </p>
+
+                    <p>
+                        Área = largura × comprimento <br>
+                        Mostre o resultado na tela
+                    </p>
+
+                   <h3>Desafio</h3>
+
+                    <p>Crie uma mini calculadora.</p>
+
+                    <p>
+                        O usuário deverá informar dois números. <br>
+                        O programa deverá mostrar: <br> <br>
+                        
+                        Soma: <br>
+                        Subtração: <br>
+                        Multiplicação: <br>
+                        Divisão: <br>
+                        Potência: <br>
+                        Resto da divisão: <br>
+                        
+                        Utilizando todos os operadores aprendidos nesta aula
+                    </p>
+                    <h3>Resumo</h3>
+
+                    <p>Aprendemos</p>
+                    <p>  
+                        * Soma ('+') <br>
+                        * Subtração ('-')<br>
+                        * Multiplicação ('*') <br>
+                        * Divisão ('/') <br>
+                        * Potência ('**') <br>
+                        * Resto da divisão ('%') <br>
+                        * Conversão para inteiro com 'int()' <br>
+                        * Conversão para decimal com 'float()' <br>
+                        * Como realizar cálculos utilizando valores digitados pelo usuário <br>
+                    </p>
+ 
+            </section>
+
+            <section  class="hero" id="operadores-comparacao">
+                    <h1>Operadores de Comparação</h1>
+
+                   <h2>O que são operadores de comparação?</h2>
+
+                    <p>
+                        Os operadores de comparação são utilizados para comparar valores. <br>
+                        O resultado de uma comparação será sempre: <br>
+                        'True' --> (verdadeiro) <br>
+                        'False' --> (falso) <br> <br>
+                        Esses operadores são muito importantes, principalmente com 
+                        as estruturas condicionais. <br>
+                    </p>
+
+                  
+
+                    <h3><strong>Igual a (==)</strong></h3>
+
+                    <p><strong>O operador '=='</strong> verifica se dois valores são iguais.</p>
+
+                    
+                    <pre class="codigo"><code>numero = 10
+print(numero == 10)</code></pre>
+                
+                    <ol class="lista">
+                        <li type="circle">numero = 10 --> Cria uma variável com o valor 10.</li>
+                        <li type="circle">print(numero == 10) --> Verifica se o valor de 'numero' é igual a 10.</li>
+                    </ol>
+
+                <p>
+                    Resultado: True  
+                    
+                </p>
+
+                    <h3><strong>Diferente de (!=)</strong></h3>
+
+                    <p><strong>O operador '!='</strong> verifica se dois valores são diferentes.</p>
+
+                    <pre class="codigo"><code>numero = 10
+print(numero != 5)</code></pre>
+
+                    <ol class="lista"><li type="circle">O Python verifica se 10 é diferente de 5.</li></ol>
+
+                <p>
+                    Resultado: True
+                    
+                </p>
+                   
+                    <h3>Outro exemplo:</h3>
+
+                    <pre class="codigo"><code>print(numero != 10)</code></pre>
+                    
+
+                    <p>
+                        Resultado: False <br>
+                        Porque os valores são iguais.
+                    </p>
+                    
+
+
+                    <h3>
+                        <strong>Maior que (>)</strong>
+                    </h3>
+
+                    <p><strong>O operador '>'</strong> verifica se um valor é maior que outro.</p>
+                    
+                    <pre class="codigo"><code>idade = 20
+print(idade > 18)</code></pre>
+                   
+                    <p>
+                        Resultado: True <br> 
+                        Porque 20 é maior que 18.
+                    </p>
+
+                    <h3><strong>Menor que (<)</strong></h3>
+
+                    <p><strong>O operador '<'</strong> verifica se um valor é menor que outro.</p>
+
+                    <pre class="codigo"><code>idade = 15
+print(idade < 18)</code></pre>
+
+                    <p>
+                        Resultado: True <br>
+                        Porque 15 é menor que 18.
+                    </p>
+
+
+                    <h3><strong>Maior ou igual a (>=)</strong></h3>
+
+                    <p><strong>O operador '>='</strong> verifica se um valor é maior ou igual ao outro.</p>
+
+                    <pre class="codigo"><code>idade = 18
+print(idade >= 18)</code></pre>
+
+                   <p>
+                        Resultado: True <br>
+                        Porque 18 é igual a 18.
+                   </p>
+
+                    <h3>Outro exemplo:</h3>
+
+                    <pre class="codigo"><code>idade = 20
+print(idade >= 18)</code></pre>
+                   
+                    <p>
+                        Resultado:True <br>
+                        Porque 20 é maior que 18.
+                    </p>
+
+                    <h3><strong>Menor ou igual a (<=)</strong></h3>
+
+                    <p><strong>O operador '<='</strong> verifica se um valor é menor ou igual ao outro.</p>
+
+                    <pre class="codigo"><code>idade = 18
+print(idade <= 18)</code></pre>
+                    
+                    <p>
+                        Resultado: True <br>
+                        Porque 18 é igual a 18.
+                    </p>
+
+                    <h3>Outro exemplo:</h3>
+
+                    <pre class="codigo"><code>idade = 15
+print(idade <= 18)</code></pre>
+                    
+                    <p>
+                        Resultado:True <br>
+                        Porque 15 é menor que 18.
+                    </p>
+
+                   <h3>Exemplo Prático 01</h3>
+
+                    <p>Vamos comparar duas idades.</p>
+
+                    <pre class="codigo"><code>idade1 = 20
+idade2 = 18 <br>
+print(idade1 > idade2)
+print(idade1 < idade2)
+print(idade1 == idade2)</code></pre>
+                    
+                    <p>
+                        Resultado: <br>
+                        True <br>
+                        False <br>
+                        False
+                    </p>
+
+                    <ol class="lista">
+                        <li type="circle">20 é maior que 18 --> True</li>
+                        <li type="circle">20 é menor que 18 --> False</li>
+                        <li type="circle">20 é igual a 18 --> False</li>
+                    </ol>
+
+                    <h3>Exemplo Prático 02</h3>
+                    <p>Comparando notas.</p>
+                    <pre><code>nota = 15
+print(nota >= 10)
+</code></pre>
+                    <p>Resultado: True <br>
+                    Nesse caso estamos verificando se a nota é maior ou igual a 10.
+                    </p>
+
+                    <h3>Tabela Resumo</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Operador</th>
+                            <th>Significado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>==</td>
+                            <td>Igual a</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>Diferente de</td>
+                        </tr>
+                        <tr>
+                            <td>&gt;</td>
+                            <td>Maior que</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;</td>
+                            <td>Menor que</td>
+                        </tr>
+                        <tr>
+                            <td>&gt;=</td>
+                            <td>Maior ou igual a</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;=</td>
+                            <td>Menor ou igual a</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                    <h2>Exercícios</h2>
+
+                    <h3>Exercício 01</h3>
+
+                    <p>
+                        Crie uma variável chamada 'idade' com o valor 25. <br>
+                        Verifique se ela é maior que 18.
+                    </p>
+
+                    <h3>Exercício 02</h3>
+                    <p>
+                        Crie duas variáveis: <br>
+                        numero1 = 10 <br>
+                        numero2 = 20 <br>
+
+                        Verifique: <br>
+    
+                        • Se são iguais. <br>
+                        • Se são diferentes. <br>
+                        • Se o primeiro é maior que o segundo. <br>
+                    </p>
+
+                    <h3>Exercício 03</h3>
+
+                    <p>
+                        Crie uma variável chamada 'nota' com o valor 12. <br>
+                        Verifique se ela é maior ou igual a 10.
+                    </p>
+
+                    <h3>Desafio</h3>
+
+                    <p>
+                        Crie um programa que solicite ao usuário dois números. <br>
+                        Depois exiba o resultado das seguintes comparações:
+                    </p>
+
+                    <p>
+                        • Primeiro número é igual ao segundo? <br>
+                        • Primeiro número é diferente do segundo? <br>
+                        • Primeiro número é maior que o segundo? <br>
+                        • Primeiro número é menor que o segundo? <br>
+                        • Primeiro número é maior ou igual ao segundo? <br>
+                        • Primeiro número é menor ou igual ao segundo? <br>
+                    </p>
+                   
+                   <h3>Resumo</h3>
+                   <p>Aprendemos:</p>
+
+                    <p>
+                        * Igual a ('==') <br>
+                        * Diferente de ('!=') <br>
+                        * Maior que ('>') <br>
+                        * Menor que ('<') <br>
+                        * Maior ou igual a ('>=') <br>
+                        * Menor ou igual a ('<=') <br>
+                        * Como comparar valores <br>
+                        * Como interpretar resultados 'True' e 'False'
+                    </p>   
+            </section>
+
+
+            <section  class="hero" id="condicionais">
+                    <h1>Condicionais (if, elif, else)</h1>
+
+                    <h2><strong>O que são condicionais?</strong></h2>
+
+                    <p>
+                        <strong>As condicionais</strong> permitem que um programa tome decisões. <br>
+                        Dependendo de uma condição ser verdadeira ou falsa, o programa executará diferentes ações.
+                    </p>
+
+                    <p>
+                        Imagine a seguinte situação: <br>
+                        • Se a idade for maior ou igual a 18 -> pode entrar. <br>
+                        • Caso contrário -> não pode entrar.
+                    </p>
+                    <p>É exatamente isso que as estruturas condicionais fazem.</p>
+
+                  
+                    <h3><strong>Estrutura 'if'</strong></h3>
+
+                    <p>O <strong>'if'</strong> é utilizado quando queremos executar uma ação somente se uma condição for verdadeira.</p>
+
+                    <p>Exemplo</p>
+
+                    <pre class="codigo"><code>idade = 20
+if idade >= 18:
+    print("Você é maior de idade.")</code></pre>
+
+                    <ol class="lista">
+                        <li type="circle">idade = 20 --> Cria uma variável com o valor 20.</li>
+                        <li type="circle">if idade >= 18: -->  Verifica se a idade é maior ou igual a 18.</li>
+                        <li type="circle">print("Você é maior de idade.") --> Será executado apenas se a condição for verdadeira.</li>
+                    </ol>
+
+                    <p>Resultado: Você é maior de idade.</p>
+
+                    <h3>A importância da <a class="destaque" href="https://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o" target="_blank">indentação</a></h3>
+
+                    <p>Em Python, os blocos de código dentro do 'if' devem estar recuados.</p>
+
+                    <p>Exemplo correto:</p>
+
+                    
+                    <pre class="codigo"><code>idade = 20
+if idade >= 18:
+    print("Você é maior de idade.")</code></pre>
+
+                    <p>Exemplo incorreto:</p>
+
+                    <pre class="codigo"><code>idade = 20
+if idade >= 18:
+print("Você é maior de idade.")</code></pre>
+
+                    <p>Sem a indentação o Python gerará um erro.</p>
+
+                    <h3><strong>Estrutura 'else'</strong></h3>
+                    <p><strong>O 'else'</strong> é utilizado quando queremos executar uma ação caso a condição seja falsa.</p>
+
+                    <p>Exemplo</p>
+                    
+                    <pre class="codigo"><code>idade = 16
+if idade >= 18:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")</code></pre>
+                    
+                    <p>
+                        Se a idade for maior ou igual a 18: Você é maior de idade. <br>
+                        Caso contrário: Você é menor de idade.
+                    </p>
+                    
+                    <p>Resultado: Você é menor de idade.</p>
+
+                <h3><strong>Estrutura 'elif'</strong></h3>
+
+                <p>
+                    <strong>O 'elif'</strong> é utilizado quando queremos verificar uma nova condição caso a condição anterior seja falsa.
+                </p>
+
+                <p>Exemplo</p>
+
+<pre class="codigo"><code>nota = 15
+if nota >= 16:
+    print("Excelente")
+elif nota >= 10:
+    print("Aprovado")
+else:
+    print("Reprovado")</code></pre>
+
+            <ol class="lista">
+                <li type="circle">nota = 15 --> Cria uma variável com o valor 15.</li>
+                <li type="circle">if nota >= 16: --> Verifica se a nota é maior ou igual a 16.</li>
+                <li type="circle">elif nota >= 10: --> Caso a primeira condição seja falsa, verifica se a nota é maior ou igual a 10.</li>
+                <li type="circle">else: --> Será executado se nenhuma das condições anteriores for verdadeira.</li>
+            </ol>
+
+            <p>
+                Resultado: <strong>Aprovado</strong>
+            </p>
+
+            <h3><strong>Fluxo de execução</strong></h3>
+
+            <p>
+                O Python verifica as condições <strong>de cima para baixo</strong>. Assim que encontra a
+                primeira condição verdadeira, executa aquele bloco de código e ignora os restantes.
+            </p>
+
+            <p>Exemplo</p>
+
+<pre class="codigo"><code>nota = 18
+if nota >= 16:
+    print("Excelente")
+elif nota >= 10:
+    print("Aprovado")
+else:
+    print("Reprovado")</code></pre>
+
+            <ol class="lista">
+                <li type="circle">O Python verifica primeiro: <strong>nota >= 16</strong>.</li>
+                <li type="circle">Como a condição é verdadeira, imprime <strong>"Excelente"</strong>.</li>
+                <li type="circle">As estruturas <strong>elif</strong> e <strong>else</strong> são ignoradas.</li>
+            </ol>
+
+            <p>
+                Resultado: Excelente
+            </p>
+
+            <h3><strong>Exemplo Prático 01</strong></h3>
+
+            <p>
+                O programa abaixo verifica se uma pessoa já pode votar.
+            </p>
+
+<pre class="codigo"><code>idade = int(input("Digite sua idade: "))
+if idade >= 18:
+    print("Você pode votar.")
+else:
+    print("Você ainda não pode votar.")</code></pre>
+
+            <p>
+                Possível execução <br>
+                Digite sua idade: 20 <br>
+                Você pode votar.
+            </p>
+
+            <p>
+                Caso a idade seja menor que 18, será apresentada a mensagem:
+                <strong>"Você ainda não pode votar."</strong>
+            </p>
+
+            <h3><strong>Exemplo Prático 02</strong></h3>
+
+            <p>
+                O programa abaixo solicita uma nota e informa se o aluno foi aprovado ou reprovado.
+            </p>
+
+        <p>Exemplo</p>
+
+<pre class="codigo"><code>nota = float(input("Digite sua nota: "))
+if nota >= 16:
+    print("Excelente")
+elif nota >= 10:
+    print("Aprovado")
+else:
+    print("Reprovado")</code></pre>
+            <p>
+                Possível execução <br>
+    
+                Digite sua nota: 14 <br>
+                Aprovado
+            </p>
+
+        <p>
+            O programa verifica a nota informada e apresenta o resultado de acordo com a condição
+            satisfeita.
+        </p>
+
+        <h3>Exemplo Prático 03</h3>
+
+        <p>
+            Também podemos utilizar condicionais para verificar se uma senha está correta.
+        </p>
+
+        <p>Exemplo</p>
+
+<pre class="codigo"><code>senha = input("Digite a senha: ")
+if senha == "python123":
+    print("Acesso permitido")
+else:
+    print("Senha incorreta")</code></pre>
+
+    <p>
+        Possível execução <br>
+        Digite a senha: python123 <br>
+        Acesso permitido
+    </p>
+
+    <p>
+        Caso a senha seja diferente de <strong>"python123"</strong>, será apresentada a mensagem
+        <strong>"Senha incorreta"</strong>.
+    </p>
+
+    <h2><strong>Exercícios</strong></h2>
+
+    <h3><strong>Exercício 01</strong></h3>
+
+<p>
+    Crie uma variável chamada idade. <br>
+    Se a idade for maior ou igual a 18, exiba: Maior de idade <br>
+    Caso contrário, exiba: Menor de idade
+</p>
+
+
+<h3>Exercício 02</h3>
+
+<p>
+    Solicite ao usuário uma nota. <br>
+    Se a nota for maior ou igual a <strong>10</strong>, exiba: Aprovado <br>
+    Caso contrário, exiba: Reprovado
+    
+</p>
+
+<h3>Exercício 03</h3>
+
+<p>
+    Solicite ao usuário uma senha. <br>
+    Se a senha for igual a: 1234</p>
+
+
+<p>Exiba: Acesso permitido <br>
+    Caso contrário, exiba: Acesso negado
+</p>
+
+
+<h2><strong>Desafio</strong></h2>
+
+<p>
+    Crie um programa que solicite a idade do usuário e exiba uma categoria de acordo com a idade.
+</p>
+
+<ol class="lista">
+    <li type="circle">Menos de 12 anos → Criança.</li>
+    <li type="circle">Entre 12 e 17 anos → Adolescente.</li>
+    <li type="circle">18 anos ou mais → Adulto.</li>
+</ol>
+
+<p>Exemplo</p>
+
+<p>
+    Digite sua idade: 15 <br>
+    Adolescente
+</p>
+
+            <h2><strong>Resumo</strong></h2>
+
+            <p>Aprendemos:</p>
+
+            <ol class="lista">
+                <li type="circle">O que são estruturas condicionais.</li>
+                <li type="circle">Como utilizar <span class="codigo">if</span>.</li>
+                <li type="circle">Como utilizar <span class="codigo">else</span>.</li>
+                <li type="circle">Como utilizar <span class="codigo">elif</span>.</li>
+                <li type="circle">A importância da indentação.</li>
+                <li type="circle">Como criar programas que tomam decisões.</li>
+                <li type="circle">Como utilizar operadores de comparação juntamente com estruturas condicionais.</li>
+            </ol>        
                     
             </section>
 
-            <section id="condicionais">
-                    <h1>Condicionais (if, else)</h1>
-
-                    
-            </section>
-
-            <section id="lacos-repeticao">
+            <section  class="hero" id="lacos-repeticao">
                     <h1>Laços de Repetição (for, while)</h1>
 
-                    
-            </section>
+                    <h2><strong>O que são laços de repetição?</strong></h2>
+
+<p>
+    <strong>Os laços de repetição</strong> permitem executar uma mesma tarefa várias vezes sem precisar repetir o mesmo código manualmente.
+</p>
+
+<p>
+    Imagine que você queira exibir a mensagem:
+</p>
+
+<p>
+    Olá! <br>
+    Olá! <br> 
+    Olá! <br>
+    Olá! <br>
+    Olá! <br>
+</p>
+
+<p>
+    Em vez de escrever cinco comandos <span class="codigo">print()</span>, podemos utilizar um laço de repetição.
+</p>
+
+<p>
+    O Python possui dois principais laços de repetição:
+</p>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">for</span></li>
+    <li type="circle"><span class="codigo">while</span></li>
+</ol>
+
+<h3><strong>Estrutura 'for'</strong></h3>
+
+<p>
+    O <strong>'for'</strong> é utilizado quando sabemos exatamente quantas vezes queremos repetir uma ação.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>for numero in range(5):
+    print("Olá!")</code></pre>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">for numero in range(5):</span> → Repete o bloco de código cinco vezes.</li>
+    <li type="circle"><span class="codigo">print("Olá!")</span> → Será executado em cada repetição.</li>
+</ol>
+
+<p>
+    Resultado: <br>
+    Olá! <br>
+    Olá! <br>
+    Olá! <br>
+    Olá! <br>
+    Olá! <br>
+</p>
+
+<h3><strong>Utilizando o valor da repetição</strong></h3>
+
+<p>
+    Também podemos acessar o valor atual de cada repetição.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>for numero in range(5):
+    print(numero)</code></pre>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">numero</span> recebe um valor diferente em cada repetição.</li>
+    <li type="circle">O <span class="codigo">print()</span> exibe esse valor.</li>
+</ol>
+
+<p>Resultado: <br>
+0 <br>
+1 <br>
+2 <br>
+3 <br>
+4 <br>
+</p>
+
+<p>
+    Observe que o Python começa a contar a partir do <strong>zero</strong>.
+</p>
+
+<h3><strong>Definindo início e fim</strong></h3>
+
+<p>
+    Também podemos definir onde a contagem começa e onde termina.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>for numero in range(1, 6):
+    print(numero)</code></pre>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">range(1, 6)</span> → Começa no número 1.</li>
+    <li type="circle">O número 6 não será exibido.</li>
+    <li type="circle">O último valor mostrado será o 5.</li>
+</ol>
+
+<p>
+    Resultado: <br>
+    1 <br>
+    2 <br>
+    3 <br> 
+    4 <br>
+    5 <br>
+</p>
+
+<h3><strong>Exemplo Prático</strong></h3>
+
+<p>
+    Exibindo os números de 1 até 10.
+</p>
+
+<pre class="codigo"><code>for numero in range(1, 11):
+    print(numero)</code></pre>
+
+<p>Resultado</p>
+
+<p>
+    1 <br>
+    2 <br>
+    3 <br>
+    4 <br>
+    5 <br> 
+    6 <br>
+    7 <br>
+    8 <br>
+    9 <br>
+    10 <br>
+</p>
+
+        <h3><strong>Estrutura 'while'</strong></h3>
+
+<p>
+    O <strong>'while'</strong> é utilizado quando não sabemos exatamente quantas vezes uma repetição irá acontecer.
+</p>
+
+<p>
+    O laço continuará executando enquanto a condição for verdadeira.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>contador = 1
+
+while contador <= 5:
+    print(contador)
+    contador = contador + 1</code></pre>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">contador = 1</span> → Cria uma variável chamada <strong>contador</strong> com o valor inicial 1.</li>
+    <li type="circle"><span class="codigo">while contador <= 5:</span> → Enquanto o contador for menor ou igual a 5, o laço continuará.</li>
+    <li type="circle"><span class="codigo">print(contador)</span> → Exibe o valor atual do contador.</li>
+    <li type="circle"><span class="codigo">contador = contador + 1</span> → Aumenta o contador em 1 a cada repetição.</li>
+</ol>
+
+<p>Resultado: <br>
+    1 <br>
+    2 <br>
+    3 <br>
+    4 <br>
+    5 <br>
+</p>
+
+<h3><strong>A importância de atualizar a condição</strong></h3>
+
+<p>
+    Sempre que utilizar um <span class="codigo">while</span>, é necessário atualizar a variável utilizada na condição. Caso contrário, o programa poderá entrar em um <strong>laço infinito</strong>.
+</p>
+
+<p>Exemplo incorreto</p>
+
+<pre class="codigo"><code>contador = 1
+
+while contador <= 5:
+    print(contador)</code></pre>
+
+<p>
+    Nesse exemplo, a variável <span class="codigo">contador</span> nunca é alterada.
+</p>
+
+<p>
+    Como a condição continuará sendo verdadeira, o programa ficará executando para sempre.
+</p>
+
+<p>Exemplo correto</p>
+
+<pre class="codigo"><code>contador = 1
+
+while contador <= 5:
+    print(contador)
+    contador = contador + 1</code></pre>
+
+<p>
+    Agora o contador aumenta em cada repetição e o laço termina quando chegar ao valor 6.
+</p>
+
+<h3><strong>Exemplo Prático</strong></h3>
+
+<p>
+    Solicitando uma senha até que ela esteja correta.
+</p>
+
+<pre class="codigo"><code>senha = ""
+
+while senha != "1234":
+    senha = input("Digite a senha: ")
+
+print("Acesso permitido")</code></pre>
+
+<p>Possível execução <br>
+
+    Digite a senha: 1111 <br>
+    Digite a senha: 2222 <br>
+    Digite a senha: 1234 <br>
+
+    Acesso permitido
+</p>
+
+
+<p>
+    O programa continuará solicitando a senha até que o usuário digite a senha correta.
+</p>
+
+<h3><strong>Exemplo Prático 2</strong></h3>
+
+<p>
+    Utilizando o <span class="codigo">for</span> para criar uma tabuada.
+</p>
+
+<pre class="codigo"><code>numero = int(input("Digite um número: "))
+
+for i in range(1, 11):
+    print(numero, "x", i, "=", numero * i)</code></pre>
+
+<p>Possível execução <br>
+Digite um número: 5 <br>
+5 x 1 = 5 <br>
+5 x 2 = 10 <br>
+5 x 3 = 15 <br>
+...
+5 x 10 = 50
+</p>
+
+
+<p>
+    O laço percorre os números de <strong>1 até 10</strong> e exibe a tabuada do número informado pelo usuário.
+</p>
+
+<h2><strong>Diferença entre 'for' e 'while'</strong></h2>
+
+<h3><strong>Quando utilizar o 'for'</strong></h3>
+
+<ol class="lista">
+    <li type="circle">Quando você sabe quantas vezes deseja repetir.</li>
+    <li type="circle">Quando está percorrendo uma sequência de valores.</li>
+</ol>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>for numero in range(10):
+    print(numero)</code></pre>
+
+<h3><strong>Quando utilizar o 'while'</strong></h3>
+
+<ol class="lista">
+    <li type="circle">Quando a repetição depende de uma condição.</li>
+    <li type="circle">Quando não se sabe exatamente quantas repetições acontecerão.</li>
+</ol>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>while senha != "1234":
+    senha = input("Digite a senha: ")</code></pre>
+
+        <h2><strong>Exercícios</strong></h2>
+
+<h3><strong>Exercício 01</strong></h3>
+
+<p>
+    Utilize um <span class="codigo">for</span> para exibir os números de <strong>1 até 10</strong>.
+</p>
+
+
+<h3><strong>Exercício 02</strong></h3>
+
+<p>
+    Utilize um <span class="codigo">for</span> para exibir os números de <strong>10 até 20</strong>.
+</p>
+
+
+
+<h3><strong>Exercício 03</strong></h3>
+
+<p>
+    Utilize um <span class="codigo">while</span> para exibir os números de <strong>1 até 5</strong>.
+</p>
+
+<p>Exemplo de saída</p>
+
+
+<h3><strong>Exercício 04</strong></h3>
+
+<p>
+    Solicite uma senha ao usuário. <br>
+    Enquanto a senha for diferente de <span class="codigo">python</span>, solicite novamente.
+</p>
+
+
+<p>
+    Quando a senha estiver correta, exiba: Acesso permitido
+</p>
+
+<h2><strong>Desafio</strong></h2>
+
+<p>
+    Crie um programa que solicite um número ao usuário e exiba a tabuada completa desse número utilizando um laço <span class="codigo">for</span>.
+</p>
+
+<h2><strong>Resumo</strong></h2>
+
+<p>
+    Aprendemos:
+</p>
+
+<ol class="lista">
+    <li type="circle">O que são laços de repetição.</li>
+    <li type="circle">Como utilizar o <span class="codigo">for</span>.</li>
+    <li type="circle">Como utilizar a função <span class="codigo">range()</span>.</li>
+    <li type="circle">Como utilizar o <span class="codigo">while</span>.</li>
+    <li type="circle">Como controlar repetições utilizando condições.</li>
+    <li type="circle">Como evitar laços de repetição infinitos.</li>
+    <li type="circle">Como automatizar tarefas utilizando estruturas de repetição.</li>
+</ol>
+
+</section>
+
+
+
+<section  class="hero" id="funcoes">
+        <h1>Funções Úteis</h1>
+        <h2><strong>O que são funções?</strong></h2>
+
+<p>
+    <strong>Funções</strong> são comandos prontos que executam tarefas específicas.
+</p>
+
+<p>
+    Ao longo das aulas já utilizamos algumas funções, como:
+</p>
+
+<pre class="codigo"><code>print()
+input()
+int()
+float()</code></pre>
+
+<p>
+    Nesta aula vamos conhecer outras funções úteis que aparecem com frequência em programas Python.
+</p>
+
+<h3><strong>Função 'type()'</strong></h3>
+
+<p>
+    A função <span class="codigo">type()</span> permite descobrir o tipo de dado armazenado em uma variável.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>nome = "João"
+
+print(type(nome))</code></pre>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">nome = "João"</span> → Cria uma variável contendo um texto.</li>
+    <li type="circle"><span class="codigo">type(nome)</span> → Descobre o tipo da variável.</li>
+    <li type="circle"><span class="codigo">print()</span> → Exibe o resultado na tela.</li>
+</ol>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>&lt;class 'str'&gt;</code></pre>
+
+<p>Outro exemplo</p>
+
+<pre class="codigo"><code>idade = 20
+
+print(type(idade))</code></pre>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>&lt;class 'int'&gt;</code></pre>
+
+<h3><strong>Função 'len()'</strong></h3>
+
+<p>
+    A função <span class="codigo">len()</span> retorna a quantidade de caracteres de um texto.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>nome = "Python"
+
+print(len(nome))</code></pre>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">len(nome)</span> → Conta quantos caracteres existem na variável.</li>
+</ol>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>6</code></pre>
+
+<p>Porque:</p>
+
+<pre class="codigo"><code>P y t h o n
+1 2 3 4 5 6</code></pre>
+
+<p>Outro exemplo</p>
+
+<pre class="codigo"><code>cidade = "Luanda"
+
+print(len(cidade))</code></pre>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>6</code></pre>
+
+<h3><strong>Função 'round()'</strong></h3>
+
+<p>
+    A função <span class="codigo">round()</span> é utilizada para arredondar números decimais.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>numero = 5.8
+
+print(round(numero))</code></pre>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>6</code></pre>
+
+<p>Arredondando casas decimais</p>
+
+<pre class="codigo"><code>numero = 3.14159
+
+print(round(numero, 2))</code></pre>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">round(numero, 2)</span> → Mantém apenas duas casas decimais.</li>
+</ol>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>3.14</code></pre>
+
+
+<h3><strong>Função 'max()'</strong></h3>
+
+<p>
+    A função <span class="codigo">max()</span> retorna o maior valor entre dois ou mais números.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>print(max(10, 20, 30))</code></pre>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>30</code></pre>
+
+<p>Outro exemplo</p>
+
+<pre class="codigo"><code>nota1 = 15
+nota2 = 18
+
+print(max(nota1, nota2))</code></pre>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">max(nota1, nota2)</span> → Compara os dois valores.</li>
+    <li type="circle">Retorna o maior valor encontrado.</li>
+</ol>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>18</code></pre>
+
+<h3><strong>Função 'min()'</strong></h3>
+
+<p>
+    A função <span class="codigo">min()</span> retorna o menor valor entre dois ou mais números.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>print(min(10, 20, 30))</code></pre>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>10</code></pre>
+
+<p>Outro exemplo</p>
+
+<pre class="codigo"><code>nota1 = 15
+nota2 = 18
+
+print(min(nota1, nota2))</code></pre>
+
+<ol class="lista">
+    <li type="circle"><span class="codigo">min(nota1, nota2)</span> → Compara os dois valores.</li>
+    <li type="circle">Retorna o menor valor encontrado.</li>
+</ol>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>15</code></pre>
+
+<h3><strong>Função 'abs()'</strong></h3>
+
+<p>
+    A função <span class="codigo">abs()</span> retorna o valor absoluto de um número.
+</p>
+
+<p>
+    O valor absoluto é sempre positivo.
+</p>
+
+<p>Exemplo</p>
+
+<pre class="codigo"><code>print(abs(-10))</code></pre>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>10</code></pre>
+
+<p>Outro exemplo</p>
+
+<pre class="codigo"><code>print(abs(-50))</code></pre>
+
+<p>Resultado</p>
+
+<pre class="codigo"><code>50</code></pre>
+
+<h3><strong>Exemplo Prático</strong></h3>
+
+<p>
+    Verificando informações sobre um nome.
+</p>
+
+<pre class="codigo"><code>nome = input("Digite seu nome: ")
+
+print("Quantidade de letras:", len(nome))
+print("Tipo:", type(nome))</code></pre>
+
+<p>Possível execução</p>
+
+<pre class="codigo"><code>Digite seu nome: Manuel
+
+Quantidade de letras: 6
+Tipo: &lt;class 'str'&gt;</code></pre>
+
+<p>
+    O programa informa quantas letras o nome possui e também o tipo do dado armazenado.
+</p>
+
+<h3><strong>Exemplo Prático 2</strong></h3>
+
+<p>
+    Calculando a maior e a menor nota.
+</p>
+
+<pre class="codigo"><code>nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
+
+print("Maior nota:", max(nota1, nota2, nota3))
+print("Menor nota:", min(nota1, nota2, nota3))</code></pre>
+
+<p>Possível execução</p>
+
+<pre class="codigo"><code>Digite a primeira nota: 15
+Digite a segunda nota: 12
+Digite a terceira nota: 18
+
+Maior nota: 18
+Menor nota: 12</code></pre>
+
+<p>
+    As funções <span class="codigo">max()</span> e <span class="codigo">min()</span> facilitam a comparação entre vários valores, retornando automaticamente o maior e o menor número.
+</p>
+               
+<h2><strong>Tabela Resumo</strong></h2>
+
+<p>
+    A tabela abaixo resume as principais funções estudadas nesta aula.
+</p>
+
+<table class="tabela">
+    <thead>
+        <tr>
+            <th>Função</th>
+            <th>Utilidade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><span class="codigo">type()</span></td>
+            <td>Descobrir o tipo de dado.</td>
+        </tr>
+
+        <tr>
+            <td><span class="codigo">len()</span></td>
+            <td>Contar caracteres de um texto.</td>
+        </tr>
+
+        <tr>
+            <td><span class="codigo">round()</span></td>
+            <td>Arredondar números decimais.</td>
+        </tr>
+
+        <tr>
+            <td><span class="codigo">max()</span></td>
+            <td>Encontrar o maior valor.</td>
+        </tr>
+
+        <tr>
+            <td><span class="codigo">min()</span></td>
+            <td>Encontrar o menor valor.</td>
+        </tr>
+
+        <tr>
+            <td><span class="codigo">abs()</span></td>
+            <td>Retornar o valor absoluto.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2><strong>Exercícios</strong></h2>
+
+<h3><strong>Exercício 1</strong></h3>
+
+<p>
+    Crie uma variável contendo o seu nome.
+</p>
+
+<p>
+    Utilize a função <span class="codigo">len()</span> para mostrar quantos caracteres ela possui.
+</p>
+
+<h3><strong>Exercício 2</strong></h3>
+
+<p>
+    Crie uma variável contendo um número decimal.
+</p>
+
+<p>
+    Utilize a função <span class="codigo">round()</span> para arredondar esse valor.
+</p>
+
+<h3><strong>Exercício 3</strong></h3>
+
+<p>
+    Crie três variáveis contendo notas.
+</p>
+
+<p>
+    Utilize:
+</p>
+
+<pre class="codigo"><code>max()</code></pre>
+
+<p>
+    Para descobrir a maior nota.
+</p>
+
+<p>
+    Depois utilize:
+</p>
+
+<pre class="codigo"><code>min()</code></pre>
+
+<p>
+    Para descobrir a menor nota.
+</p>
+
+<h3><strong>Exercício 4</strong></h3>
+
+<p>
+    Crie uma variável contendo um número negativo.
+</p>
+
+<p>
+    Utilize:
+</p>
+
+<pre class="codigo"><code>abs()</code></pre>
+
+<p>
+    Para exibir o seu valor positivo correspondente.
+</p>
+
+<h2><strong>Desafio</strong></h2>
+
+<p>
+    Crie um programa que solicite ao usuário:
+</p>
+
+<ol class="lista">
+    <li type="circle">Nome.</li>
+    <li type="circle">Três notas.</li>
+</ol>
+
+<p>
+    Depois exiba:
+</p>
+
+<ol class="lista">
+    <li type="circle">Quantidade de letras do nome.</li>
+    <li type="circle">Maior nota.</li>
+    <li type="circle">Menor nota.</li>
+    <li type="circle">Média das notas arredondada para duas casas decimais.</li>
+</ol>
+
+<p>Exemplo de execução</p>
+
+<pre class="codigo"><code>Nome: Manuel
+Letras: 6
+Maior nota: 18
+Menor nota: 12
+Média: 15.00</code></pre>
+
+<h2><strong>Resumo</strong></h2>
+
+<p>
+    Aprendemos:
+</p>
+
+<ol class="lista">
+    <li type="circle">O que são funções.</li>
+    <li type="circle">Como utilizar <span class="codigo">type()</span>.</li>
+    <li type="circle">Como utilizar <span class="codigo">len()</span>.</li>
+    <li type="circle">Como utilizar <span class="codigo">round()</span>.</li>
+    <li type="circle">Como utilizar <span class="codigo">max()</span>.</li>
+    <li type="circle">Como utilizar <span class="codigo">min()</span>.</li>
+    <li type="circle">Como utilizar <span class="codigo">abs()</span>.</li>
+    <li type="circle">Como aplicar essas funções em situações práticas.</li>
+</ol>
+
+            
+</section>
+
 
        
 
