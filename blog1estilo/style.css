@@ -46,6 +46,147 @@ body{
     color: var(--text-primary);
 }
 
+
+/* =========================
+   BARRA DE PESQUISA
+========================= */
+
+
+/* O header precisa ser referência
+   para a posição da barra */
+.hero-wrapper{
+    position: relative;
+}
+
+
+/* Barra fechada */
+.buscar-box{
+
+    /* Posicionamento sobre o header */
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+
+    /* Estado inicial: escondida */
+    width: 0;
+    height: 55px;
+
+
+    /* Aparência */
+    background: #fff;
+    border-radius: 10px;
+
+
+    /* Organização interna */
+    display: flex;
+    align-items: center;
+
+
+    /* Esconde o conteúdo quando fechada */
+    overflow: hidden;
+
+
+    /* Animação ao abrir */
+    transition: .4s ease;
+
+
+    /* Fica acima dos outros elementos */
+    z-index: 999;
+
+}
+
+
+
+/* Barra aberta */
+.buscar-box.ativar{
+
+    width: 450px;
+
+}
+
+
+
+/* Área onde fica o input */
+.input-buscar{
+
+    flex: 1;
+    height: 100%;
+
+}
+
+
+
+/* Campo de texto */
+.input-buscar input{
+
+    width: 100%;
+    height: 55px;
+
+
+    border: none;
+    outline: none;
+
+
+    padding: 0 20px;
+
+
+    font-size: 16px;
+
+}
+
+
+
+/* Botão fechar X */
+.btn-fechar{
+
+    width: 55px;
+    height: 55px;
+
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+
+    cursor: pointer;
+
+}
+
+
+
+/* Ícone X */
+.btn-fechar i{
+
+    color: #222;
+
+    font-size: 22px;
+
+}
+
+
+
+/* =========================
+   ESCONDER MENU AO PESQUISAR
+========================= */
+
+
+/* Apenas os links desaparecem,
+   a logo continua */
+.menu.esconder{
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+}
+
+
+
 body.dark{
     --background-primary: #FFFFFF;
     --background-secondary: #F5F5F5;
@@ -832,10 +973,10 @@ body.dark .logo-light{
 }
 
 
-
 /* =========================
    TABLET
 ========================= */
+
 @media (max-width: 1024px) {
 
     html,
@@ -896,11 +1037,26 @@ body.dark .logo-light{
         justify-content: flex-end;
     }
 
+
+
+    /* =========================
+       BARRA DE PESQUISA TABLET
+    ========================= */
+
+    .buscar-box.ativar{
+
+        width:380px;
+
+    }
+
 }
+
+
 
 /* =========================
    MOBILE
 ========================= */
+
 @media (max-width: 768px){
 
     html,
@@ -991,11 +1147,34 @@ body.dark .logo-light{
         flex-wrap: wrap;
     }
 
+
+
+    /* =========================
+       BARRA DE PESQUISA MOBILE
+    ========================= */
+
+    .buscar-box{
+
+        top:130px;
+        right:20px;
+
+    }
+
+
+    .buscar-box.ativar{
+
+        width:calc(100vw - 40px);
+
+    }
+
 }
+
+
 
 /* =========================
    MOBILE PEQUENO
 ========================= */
+
 @media (max-width:480px){
 
     .blog-page{
@@ -1072,6 +1251,48 @@ body.dark .logo-light{
         border-radius: 10px;
     }
 
+
+
+    /* =========================
+       BARRA DE PESQUISA MOBILE PEQUENO
+    ========================= */
+
+    .buscar-box{
+
+        top:120px;
+        right:10px;
+        height:50px;
+
+    }
+
+
+    .buscar-box.ativar{
+
+        width:calc(100vw - 20px);
+
+    }
+
+
+    .input-buscar input{
+
+        height:50px;
+        font-size:14px;
+
+    }
+
+
+    .btn-fechar{
+
+        width:50px;
+        height:50px;
+
+    }
+
+
+    .btn-fechar i{
+
+        font-size:18px;
+
+    }
+
 }
-
-
