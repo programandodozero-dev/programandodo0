@@ -46,6 +46,32 @@ body{
     color: var(--text-primary);
 }
 
+body.dark{
+    --background-primary: #FFFFFF;
+    --background-secondary: #F5F5F5;
+
+    --text-primary: #050A14;
+    --text-secondary: #444444;
+
+    --header-bg: #FFFFFF;
+
+    --primary-color: #0077CC;
+    --secondary-color: #2196F3;
+}
+
+.logo-light{
+    display: none !important;
+}
+
+body.dark .logo-dark{
+    display: none !important;
+}
+
+body.dark .logo-light{
+    display: block !important;
+}
+
+
 
 /* =========================
    2. HEADER / NAVBAR
