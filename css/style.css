@@ -1022,11 +1022,6 @@ HERO É A SECÇÃO DOS 8 CARDS
 
 
 
-
-
-
-
-
 /* =========================
    TABLET (1024px)
 ========================= */
@@ -1041,6 +1036,12 @@ HERO É A SECÇÃO DOS 8 CARDS
         margin-left: 0;
         gap: 15px;
     }
+
+    /* Barra de pesquisa Tablet */
+    .buscar-box.ativar{
+        width:380px;
+    }
+
 
     .hero{
         flex-direction: column;
@@ -1090,139 +1091,249 @@ HERO É A SECÇÃO DOS 8 CARDS
     }
 
     .roadmap-right{
-        width: 100%;
-        border-left: none;
-        border-top: 1px solid rgba(255,255,255,.08);
+        width:100%;
+        border-left:none;
+        border-top:1px solid rgba(255,255,255,.08);
     }
 
     .stats-grid{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr);
     }
+
 }
+
+
 
 /* =========================
    MOBILE (768px)
 ========================= */
 
-@media (max-width: 768px){
+@media (max-width:768px){
+
 
     .navbar{
-        flex-direction: column;
-        height: auto;
-        gap: 20px;
-        padding: 20px;
+        flex-direction:column;
+        height:auto;
+        gap:20px;
+        padding:20px;
     }
 
-    /* Barra de pesquisa no mobile */
-.buscar-box{
 
-    top: 130px;
-    right: 20px;
+    /* =========================
+       BARRA DE PESQUISA MOBILE
+    ========================= */
 
-}
+    .buscar-box{
+
+        top:130px;
+        right:20px;
+
+    }
+
+
+    .buscar-box.ativar{
+
+        width:calc(100vw - 40px);
+
+    }
+
+
 
     .logo img{
-        width: 160px;
+        width:160px;
     }
+
 
     .menu{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
     }
+
 
     .hero{
-        min-height: auto;
-        padding: 30px 20px;
+        min-height:auto;
+        padding:30px 20px;
     }
+
 
     .hero-content h1{
-        font-size: 2rem;
+        font-size:2rem;
     }
+
 
     .hero-content p{
-        font-size: 1rem;
+        font-size:1rem;
     }
 
+
     .hero-buttons{
-        flex-direction: column;
-        align-items: center;
+        flex-direction:column;
+        align-items:center;
     }
+
 
     .btn-primary,
     .btn-secondary{
-        width: 100%;
-        max-width: 300px;
-        justify-content: center;
-        right: 0;
+
+        width:100%;
+        max-width:300px;
+        justify-content:center;
+        right:0;
+
     }
 
+
     .hero-image img{
-        width: 100%;
-        max-width: 400px;
+
+        width:100%;
+        max-width:400px;
+
     }
+
 
     .cards-section,
     .extra-cards{
-        flex-direction: column;
-        padding: 20px;
+
+        flex-direction:column;
+        padding:20px;
+
     }
+
 
     .card{
-        width: 100%;
+
+        width:100%;
+
     }
+
 
     .roadmap-steps{
-        flex-direction: column;
-        gap: 30px;
+
+        flex-direction:column;
+        gap:30px;
+
     }
+
 
     .stats-grid{
-        grid-template-columns: 1fr;
+
+        grid-template-columns:1fr;
+
     }
+
 
     .stats-section{
-        padding: 20px;
+
+        padding:20px;
+
     }
 
+
     .footer-social{
-        gap: 15px;
+
+        gap:15px;
+
     }
+
 }
+
+
 
 /* =========================
    MOBILE PEQUENO (480px)
 ========================= */
 
-@media (max-width: 480px){
+@media (max-width:480px){
+
+
+    .buscar-box{
+
+        top:120px;
+        right:10px;
+        height:50px;
+
+    }
+
+
+    .buscar-box.ativar{
+
+        width:calc(100vw - 20px);
+
+    }
+
+
+    .input-buscar input{
+
+        height:50px;
+        font-size:14px;
+
+    }
+
+
+    .btn-fechar{
+
+        width:50px;
+        height:50px;
+
+    }
+
+
+    .btn-fechar i{
+
+        font-size:18px;
+
+    }
+
+
 
     .hero-content h1{
-        font-size: 1.6rem;
+
+        font-size:1.6rem;
+
     }
+
 
     .welcome{
-        font-size: 1rem;
+
+        font-size:1rem;
+
     }
+
 
     .hero-image img{
-        max-width: 300px;
+
+        max-width:300px;
+
     }
+
 
     .card{
-        padding: 20px;
+
+        padding:20px;
+
     }
 
+
     .stat-card{
-        padding: 20px;
+
+        padding:20px;
+
     }
+
 
     .roadmap-left,
     .roadmap-right{
-        padding: 20px;
+
+        padding:20px;
+
     }
+
 
     .roadmap-right h2{
-        font-size: 2rem;
-    }
-}
 
+        font-size:2rem;
+
+    }
+
+}
