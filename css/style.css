@@ -1020,84 +1020,151 @@ HERO É A SECÇÃO DOS 8 CARDS
 
 
 
-
-
 /* =========================
    TABLET (1024px)
 ========================= */
 
-@media (max-width: 1024px){
+@media (max-width:1024px){
 
     .navbar{
-        padding: 0 20px;
+        padding:0 20px;
     }
 
     .menu{
-        margin-left: 0;
-        gap: 15px;
+        margin-left:0;
+        gap:15px;
     }
 
-    /* Barra de pesquisa Tablet */
+
+    /* =========================
+       BARRA DE PESQUISA TABLET
+    ========================= */
+
+    .buscar-box{
+
+        top:100px;
+        right:20px;
+
+    }
+
+
     .buscar-box.ativar{
+
         width:380px;
+
     }
 
+
+
+    /* =========================
+       HERO
+    ========================= */
 
     .hero{
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 20px;
+
+        flex-direction:column;
+        text-align:center;
+        padding:40px 20px;
+
     }
+
 
     .hero-content,
     .hero-image{
-        transform: none;
+
+        transform:none;
+
     }
+
 
     .hero-content{
-        max-width: 100%;
+
+        max-width:100%;
+
     }
+
 
     .hero-image img{
-        width: 500px;
-        top: 0;
-        right: 0;
-        left: 0;
+
+        width:500px;
+        max-width:100%;
+        top:0;
+        right:0;
+        left:0;
+
     }
+
 
     .hero-buttons{
-        justify-content: center;
+
+        justify-content:center;
+
     }
 
+
     .social-icons{
-        justify-content: center;
-        right: 0;
-        top: 0;
+
+        justify-content:center;
+        right:0;
+        top:0;
+
     }
+
+
+
+    /* =========================
+       CARDS
+    ========================= */
 
     .cards-section,
     .extra-cards{
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 0;
+
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:0;
+
     }
+
 
     .card{
-        width: calc(50% - 20px);
+
+        width:calc(50% - 20px);
+
     }
+
+
+
+    /* =========================
+       ROADMAP
+    ========================= */
 
     .roadmap-section{
-        flex-direction: column;
+
+        flex-direction:column;
+
     }
+
 
     .roadmap-right{
+
         width:100%;
+
         border-left:none;
+
         border-top:1px solid rgba(255,255,255,.08);
+
     }
 
+
+
+    /* =========================
+       ESTATÍSTICAS
+    ========================= */
+
     .stats-grid{
+
         grid-template-columns:repeat(2,1fr);
+
     }
 
 }
@@ -1111,12 +1178,40 @@ HERO É A SECÇÃO DOS 8 CARDS
 @media (max-width:768px){
 
 
+    /* =========================
+       NAVBAR
+    ========================= */
+
     .navbar{
+
         flex-direction:column;
+
         height:auto;
+
         gap:20px;
+
         padding:20px;
+
     }
+
+
+    .logo img{
+
+        width:160px;
+
+    }
+
+
+    .menu{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
 
 
     /* =========================
@@ -1126,6 +1221,9 @@ HERO É A SECÇÃO DOS 8 CARDS
     .buscar-box{
 
         top:130px;
+
+        left:20px;
+
         right:20px;
 
     }
@@ -1133,43 +1231,45 @@ HERO É A SECÇÃO DOS 8 CARDS
 
     .buscar-box.ativar{
 
-        width:calc(100vw - 40px);
+        width:auto;
 
     }
 
 
 
-    .logo img{
-        width:160px;
-    }
-
-
-    .menu{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
-
+    /* =========================
+       HERO
+    ========================= */
 
     .hero{
+
         min-height:auto;
+
         padding:30px 20px;
+
     }
 
 
     .hero-content h1{
+
         font-size:2rem;
+
     }
 
 
     .hero-content p{
+
         font-size:1rem;
+
     }
 
 
     .hero-buttons{
+
         flex-direction:column;
+
         align-items:center;
+
     }
 
 
@@ -1177,8 +1277,11 @@ HERO É A SECÇÃO DOS 8 CARDS
     .btn-secondary{
 
         width:100%;
+
         max-width:300px;
+
         justify-content:center;
+
         right:0;
 
     }
@@ -1187,15 +1290,23 @@ HERO É A SECÇÃO DOS 8 CARDS
     .hero-image img{
 
         width:100%;
+
         max-width:400px;
 
     }
+
+
+
+    /* =========================
+       CARDS
+    ========================= */
 
 
     .cards-section,
     .extra-cards{
 
         flex-direction:column;
+
         padding:20px;
 
     }
@@ -1208,12 +1319,25 @@ HERO É A SECÇÃO DOS 8 CARDS
     }
 
 
+
+    /* =========================
+       ROADMAP
+    ========================= */
+
+
     .roadmap-steps{
 
         flex-direction:column;
+
         gap:30px;
 
     }
+
+
+
+    /* =========================
+       ESTATÍSTICAS
+    ========================= */
 
 
     .stats-grid{
@@ -1247,10 +1371,19 @@ HERO É A SECÇÃO DOS 8 CARDS
 @media (max-width:480px){
 
 
+    /* =========================
+       BARRA DE PESQUISA
+    ========================= */
+
+
     .buscar-box{
 
         top:120px;
+
+        left:10px;
+
         right:10px;
+
         height:50px;
 
     }
@@ -1258,7 +1391,7 @@ HERO É A SECÇÃO DOS 8 CARDS
 
     .buscar-box.ativar{
 
-        width:calc(100vw - 20px);
+        width:auto;
 
     }
 
@@ -1266,7 +1399,10 @@ HERO É A SECÇÃO DOS 8 CARDS
     .input-buscar input{
 
         height:50px;
+
         font-size:14px;
+
+        padding:0 15px;
 
     }
 
@@ -1274,6 +1410,7 @@ HERO É A SECÇÃO DOS 8 CARDS
     .btn-fechar{
 
         width:50px;
+
         height:50px;
 
     }
@@ -1285,6 +1422,11 @@ HERO É A SECÇÃO DOS 8 CARDS
 
     }
 
+
+
+    /* =========================
+       HERO
+    ========================= */
 
 
     .hero-content h1{
@@ -1308,6 +1450,12 @@ HERO É A SECÇÃO DOS 8 CARDS
     }
 
 
+
+    /* =========================
+       CARDS
+    ========================= */
+
+
     .card{
 
         padding:20px;
@@ -1320,6 +1468,12 @@ HERO É A SECÇÃO DOS 8 CARDS
         padding:20px;
 
     }
+
+
+
+    /* =========================
+       ROADMAP
+    ========================= */
 
 
     .roadmap-left,
