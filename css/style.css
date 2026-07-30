@@ -552,9 +552,14 @@ HERO É A SECÇÃO DOS 8 CARDS
     margin-top: -70px;
 }
     
-
 .card{
+    display: block;
     width: 310px;
+
+    padding: 25px;
+
+    text-decoration: none;
+    color: inherit;
 
     background: linear-gradient(
         180deg,
@@ -563,13 +568,20 @@ HERO É A SECÇÃO DOS 8 CARDS
     );
 
     border: 1px solid rgba(255,255,255,.08);
-
     border-radius: 16px;
 
-    padding: 25px;
 
-    backdrop-filter: blur(10px);
+    transition: .3s ease;
 }
+
+.card:hover{
+    
+    border-color: var(--primary-color);
+    
+}
+
+
+
 .card h3{
     display: flex;
     align-items: center;
@@ -579,7 +591,7 @@ HERO É A SECÇÃO DOS 8 CARDS
     font-size: 1rem;
     font-weight: 700;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .card h3 i{
@@ -587,7 +599,8 @@ HERO É A SECÇÃO DOS 8 CARDS
 }
 
 .learning-list{
-    list-style: none;
+    list-style: disc;
+    padding: 18px;
     
     
 }
@@ -605,7 +618,7 @@ HERO É A SECÇÃO DOS 8 CARDS
     }
 
 .learning-list li{
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 
     color: var(--text-secondary);
 
@@ -982,12 +995,553 @@ HERO É A SECÇÃO DOS 8 CARDS
 
 
 
+/* =========================
+   TECNOLOGIAS
+========================= */
+
+.tech-section{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.tech-section h2{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top: -120px;
+
+    font-family:var(--font-title);
+    font-size:1.8rem;
+
+    margin-bottom:15px;
+}
+
+.tech-section h2 i{
+    color:var(--primary-color);
+}
+
+.tech-description{
+    color:var(--text-secondary);
+    max-width:750px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.tech-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.tech-card{
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.04),
+        rgba(255,255,255,.02)
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:16px;
+
+    padding:30px;
+
+    transition:.3s;
+}
+
+.tech-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 20px rgba(0,200,255,.15);
+
+}
+
+.tech-card>i{
+
+    font-size:3rem;
+
+    color:var(--primary-color);
+
+    margin-bottom:20px;
+
+}
+
+.tech-card h3{
+
+    font-family:var(--font-title);
+
+    margin-bottom:15px;
+
+}
+
+.tech-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.progress-text{
+
+    display:block;
+
+    margin-top:12px;
+    margin-bottom:20px;
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+}
+
+/*==========================
+COMPETÊNCIAS
+==========================*/
+
+.tech-details{
+
+    max-width:1400px;
+
+    margin:60px auto;
+
+    padding:0 40px;
+
+}
+
+.detail-card{
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.04),
+        rgba(255,255,255,.02)
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:16px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+}
+
+.detail-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:25px;
+
+}
+
+.detail-header i{
+
+    font-size:3rem;
+
+    color:var(--primary-color);
+
+}
+
+.detail-header h3{
+
+    font-family:var(--font-title);
+
+    margin-bottom:5px;
+
+}
+
+.detail-header span{
+
+    color:var(--text-secondary);
+
+}
+
+.detail-card ul{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    list-style:none;
+
+}
+
+.detail-card li{
+
+    color:var(--text-secondary);
+
+}
+
+.detail-card li::before{
+
+    content:"✓";
+
+    color:var(--primary-color);
+
+    margin-right:10px;
+
+    font-weight:bold;
+
+}
+
+/*==========================
+PROJETOS
+==========================*/
+
+.projects-tech{
+
+    max-width:1400px;
+
+    margin:60px auto;
+
+    padding:0 40px;
+
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+.project-card{
+
+    display:flex;
+
+    gap:25px;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.04),
+        rgba(255,255,255,.02)
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 20px rgba(0,200,255,.15);
+
+}
+
+.project-image{
+
+    width:90px;
+    height:90px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.project-image i{
+
+    font-size:2rem;
+
+    color:var(--primary-color);
+
+}
+
+.project-content{
+
+    flex:1;
+
+}
+
+.project-content h3{
+
+    font-family:var(--font-title);
+
+    margin-bottom:10px;
+
+}
+
+.project-content p{
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+    margin-bottom:18px;
+
+}
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+.project-tags span{
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    background:rgba(0,200,255,.12);
+
+    color:var(--primary-color);
+
+    font-size:.9rem;
+
+}
+
+/*==========================
+TIMELINE
+==========================*/
+
+.timeline-section{
+
+    max-width:1400px;
+
+    margin:60px auto;
+
+    padding:0 40px;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    margin-top:50px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:28px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:rgba(255,255,255,.1);
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+    position:relative;
+
+}
+
+.timeline-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:var(--background-secondary);
+
+    border:2px solid var(--primary-color);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    z-index:2;
+
+}
+
+.timeline-icon i{
+
+    color:var(--primary-color);
+
+    font-size:1.5rem;
+
+}
+
+.timeline-content{
+
+    flex:1;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.04),
+        rgba(255,255,255,.02)
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:16px;
+
+    padding:25px;
+
+}
+
+.timeline-content span{
+
+    color:var(--primary-color);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.timeline-content h3{
+
+    margin:10px 0;
+
+    font-family:var(--font-title);
+
+}
+
+.timeline-content p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
 
 
+/*==========================
+RECURSOS
+==========================*/
 
+.resources-section{
 
+    max-width:1400px;
 
+    margin:60px auto;
 
+    padding:0 40px;
+
+}
+
+.resources-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.resource-card{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.04),
+        rgba(255,255,255,.02)
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:16px;
+
+    transition:.3s;
+
+}
+
+.resource-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary-color);
+
+    box-shadow:0 0 20px rgba(0,200,255,.15);
+
+}
+
+.resource-card i{
+
+    font-size:3rem;
+
+    color:var(--primary-color);
+
+    margin-bottom:20px;
+
+}
+
+.resource-card h3{
+
+    font-family:var(--font-title);
+
+    margin-bottom:15px;
+
+}
+
+.resource-card p{
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
 
 
 
@@ -1500,6 +2054,83 @@ HERO É A SECÇÃO DOS 8 CARDS
     .roadmap-right h2{
 
         font-size:2rem;
+
+    }
+
+}
+
+@media(max-width:1024px){
+
+    .tech-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .tech-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .projects-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .project-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .project-image{
+
+        margin:auto;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .timeline::before{
+
+        left:22px;
+
+    }
+
+    .timeline-icon{
+
+        width:50px;
+        height:50px;
+
+    }
+
+}
+
+@media(max-width:1024px){
+
+    .resources-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .resources-grid{
+
+        grid-template-columns:1fr;
 
     }
 
