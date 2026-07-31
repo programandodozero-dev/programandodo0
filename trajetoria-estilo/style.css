@@ -1,0 +1,1728 @@
+/* =========================
+   1. RESET E VARIÁVEIS
+========================= */
+
+@charset "UTF-8";
+:root {
+
+    /* Fundos */
+    --background-primary: #050A14;      /* Body */
+    --background-secondary: #0A1B3D;    /* Header, cards e seções */
+
+    /* Marca */
+    --primary-color: #00C8FF;           /* Azul Neon */
+    --secondary-color: #2196F3;         /* Azul Médio */
+
+    /* Textos */
+    --text-primary: #FFFFFF;
+    --text-secondary: #D9D9D9;
+
+    /* Header */
+    --header-bg: #0A1B3D;
+
+    /* Botões */
+    --button-primary: #00C8FF;
+    --button-secondary: #2196F3;
+
+    /* Hover */
+    --hover-color: #00C8FF;
+
+     /* Fontes */
+    --font-title: 'Montserrat', sans-serif;  /* Títulos */
+    --font-menu: 'Poppins', sans-serif;     /* Menu e Botões */
+    --font-text: 'Inter', sans-serif;     /* Textos, artigos e descrições */
+
+
+    --roadmap-purple: #9B3DFF;
+    --roadmap-purple-light: #B45CFF;
+    --card-bg: rgba(10, 18, 38, 0.72);
+    --card-border: rgba(110, 130, 180, 0.18);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-text);
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    transition: .5s;
+}
+
+
+/* =========================
+   BARRA DE PESQUISA
+========================= */
+
+
+/* O header precisa ser referência
+   para a posição da barra */
+.hero-wrapper{
+    position: relative;
+}
+
+
+/* Barra fechada */
+.buscar-box{
+
+    /* Posicionamento sobre o header */
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+
+    /* Estado inicial: escondida */
+    width: 0;
+    height: 55px;
+
+
+    /* Aparência */
+    background: #fff;
+    border-radius: 10px;
+
+
+    /* Organização interna */
+    display: flex;
+    align-items: center;
+
+
+    /* Esconde o conteúdo quando fechada */
+    overflow: hidden;
+
+
+    /* Animação ao abrir */
+    transition: .4s ease;
+
+
+    /* Fica acima dos outros elementos */
+    z-index: 999;
+
+}
+
+
+
+/* Barra aberta */
+.buscar-box.ativar{
+
+    width: 450px;
+
+}
+
+
+
+/* Área onde fica o input */
+.input-buscar{
+
+    flex: 1;
+    height: 100%;
+
+}
+
+
+
+/* Campo de texto */
+.input-buscar input{
+
+    width: 100%;
+    height: 55px;
+
+
+    border: none;
+    outline: none;
+
+
+    padding: 0 20px;
+
+
+    font-size: 16px;
+
+}
+
+
+
+/* Botão fechar X */
+.btn-fechar{
+
+    width: 55px;
+    height: 55px;
+
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+
+    cursor: pointer;
+
+}
+
+
+
+/* Ícone X */
+.btn-fechar i{
+
+    color: #222;
+
+    font-size: 22px;
+
+}
+
+
+
+/* =========================
+   ESCONDER MENU AO PESQUISAR
+========================= */
+
+
+/* Apenas os links desaparecem,
+   a logo continua */
+.menu.esconder{
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+}
+
+
+body.dark{
+    --background-primary: #FFFFFF;
+    --background-secondary: #F5F5F5;
+
+    --text-primary: #050A14;
+    --text-secondary: #444444;
+
+    --header-bg: #FFFFFF;
+
+    --primary-color: #0077CC;
+    --secondary-color: #2196F3;
+}
+
+.logo-light{
+    display: none !important;
+}
+
+body.dark .logo-dark{
+    display: none !important;
+}
+
+body.dark .logo-light{
+    display: block !important;
+}
+
+
+
+
+/* =========================
+   2. HEADER / NAVBAR
+========================= */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    height: 90px;
+    padding: 0 40px;
+
+    background-color: transparent;
+}
+
+.logo img{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+
+    list-style: none;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: .5s;
+}
+
+
+.menu a{
+    position: relative;
+
+    text-decoration: none;
+    color: var(--text-primary);
+
+    font-family: var(--font-menu);
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: var(--primary-color);
+}
+
+.menu a.active::after{
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+.menu a.active::after{
+    width: 100%;
+}
+
+
+.header-actions{
+    display: flex;
+    gap: 10px;
+}
+
+.header-actions button{
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: rgba(255,255,255,.05);
+
+    color: var(--text-primary);
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header-actions button:hover{
+    background-color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   MINHA TRAJETÓRIA
+========================= */
+
+.journey-page {
+    background: var(--background-primary);
+    color: var(--text-primary);
+    overflow: hidden;
+}
+
+.journey-page .container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.journey-hero {
+    position: relative;
+    padding: 40px 0 80px;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 15, 40, .85),
+            rgba(5, 10, 20, .95)
+        ),
+        url('../images/journey-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.journey-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0,200,255,.12),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   CABEÇALHO HERO
+========================= */
+
+.hero-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-family: var(--font-title);
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    color: var(--text-secondary);
+}
+
+/* =========================
+   ESTATÍSTICAS
+========================= */
+
+.hero-stats {
+    margin-top: 70px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    background: rgba(10, 27, 61, .55);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(0,200,255,.12);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.stat-item {
+    padding: 40px 20px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.stat-item:not(:last-child)::after {
+    content: '';
+
+    position: absolute;
+
+    top: 25%;
+    right: 0;
+
+    width: 1px;
+    height: 50%;
+
+    background: rgba(255,255,255,.08);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+    color: var(--primary-color);
+}
+
+.stat-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: .95rem;
+    color: var(--text-secondary);
+}
+
+.stat-value {
+    font-family: var(--font-title);
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    margin-bottom: 6px;
+
+    color: var(--text-primary);
+}
+
+.stat-subtitle {
+    color: var(--text-secondary);
+    font-size: .9rem;
+}
+
+/* =========================
+   RESPONSIVO HERO
+========================= */
+
+@media (max-width: 992px) {
+
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-item:nth-child(2)::after {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item::after {
+        display: none !important;
+    }
+
+}
+
+
+
+/* =========================
+   COMO TUDO COMEÇOU
+========================= */
+
+.journey-story {
+    padding: 90px 0 70px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 35px;
+}
+
+
+
+.section-heading h2 {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* =========================
+   CARD HISTÓRIA
+========================= */
+
+.story-card {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 30px;
+
+    padding: 24px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10,27,61,.90),
+            rgba(10,27,61,.55)
+        );
+
+    border: 1px solid rgba(0,200,255,.10);
+
+    backdrop-filter: blur(12px);
+}
+
+.story-image {
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.story-content p {
+    font-family: var(--font-text);
+    color: var(--text-secondary);
+
+    line-height: 1.9;
+    font-size: 1rem;
+}
+
+/* =========================
+   MARCOS DA JORNADA
+========================= */
+
+.journey-milestones {
+    padding: 30px 0 90px;
+}
+
+.timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+
+    margin-top: 40px;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline-column {
+    position: relative;
+}
+
+.timeline-column::before {
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    left: 9px;
+
+    width: 2px;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,200,255,.8),
+            rgba(0,200,255,.15)
+        );
+}
+
+.timeline-item {
+    position: relative;
+
+    padding-left: 45px;
+    margin-bottom: 55px;
+}
+
+.timeline-dot {
+    position: absolute;
+
+    left: 0;
+    top: 4px;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: var(--primary-color);
+
+    border: 4px solid var(--background-primary);
+
+    box-shadow:
+        0 0 0 4px rgba(0,200,255,.15),
+        0 0 15px rgba(0,200,255,.6);
+}
+
+.timeline-date {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #8EBBFF;
+
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+.timeline-content h3 {
+    font-family: var(--font-title);
+
+    margin-bottom: 10px;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+
+    line-height: 1.8;
+}
+
+/* =========================
+   CITAÇÃO FINAL
+========================= */
+
+.journey-quote {
+    margin-top: 50px;
+
+    position: relative;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10,27,61,.85),
+            rgba(10,27,61,.45)
+        );
+
+    border: 1px solid rgba(0,200,255,.10);
+
+    overflow: hidden;
+}
+
+.journey-quote::before {
+    content: '';
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0,200,255,.08),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+.quote-icon {
+    font-size: 4rem;
+    line-height: 1;
+
+    color: var(--primary-color);
+
+    margin-bottom: 10px;
+
+    font-family: Georgia, serif;
+}
+
+.journey-quote blockquote {
+    position: relative;
+    z-index: 2;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    font-family: var(--font-text);
+
+    font-size: 1.3rem;
+    line-height: 1.8;
+
+    color: var(--text-primary);
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 992px) {
+
+    .story-card {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .journey-story,
+    .journey-milestones {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.6rem;
+    }
+
+    .journey-quote {
+        padding: 30px 20px;
+    }
+
+    .journey-quote blockquote {
+        font-size: 1.05rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .timeline-item {
+        padding-left: 38px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+
+    .timeline-content p {
+        font-size: .95rem;
+    }
+
+}
+
+/* =========================
+   EFEITOS VISUAIS
+========================= */
+
+.journey-hero {
+    overflow: hidden;
+}
+
+/* brilho superior */
+
+.journey-hero::after {
+    content: '';
+
+    position: absolute;
+
+    top: -250px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 900px;
+    height: 900px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,200,255,.12),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+/* =========================
+   CARDS HOVER
+========================= */
+
+.stat-item,
+.story-card,
+.timeline-content,
+.journey-quote {
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.35);
+}
+
+.story-card:hover {
+    border-color: rgba(0,200,255,.25);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.35),
+        0 0 30px rgba(0,200,255,.08);
+}
+
+.journey-quote:hover {
+    border-color: rgba(0,200,255,.25);
+
+    box-shadow:
+        0 0 30px rgba(0,200,255,.08);
+}
+
+/* =========================
+   TIMELINE CARDS
+========================= */
+
+.timeline-content {
+    padding: 22px;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10,27,61,.75),
+            rgba(10,27,61,.45)
+        );
+
+    border: 1px solid rgba(255,255,255,.04);
+}
+
+.timeline-content:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(0,200,255,.20);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.35);
+}
+
+.timeline-content h3 {
+    color: var(--text-primary);
+}
+
+.timeline-content p {
+    margin: 0;
+}
+
+/* =========================
+   ANIMAÇÃO DOS PONTOS
+========================= */
+
+.timeline-dot {
+    animation: pulseDot 2.5s infinite;
+}
+
+@keyframes pulseDot {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(0,200,255,.55);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 12px rgba(0,200,255,0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(0,200,255,0);
+    }
+
+}
+
+/* =========================
+   ENTRADA SUAVE
+========================= */
+
+.hero-header,
+.hero-stats,
+.story-card,
+.timeline-item,
+.journey-quote {
+    animation: fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,200,255,.35);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* =========================
+   SEPARAÇÃO ENTRE SEÇÕES
+========================= */
+
+.journey-story {
+    position: relative;
+}
+
+.journey-story::before {
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 180px;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0,200,255,.4),
+            transparent
+        );
+}
+
+.journey-milestones {
+    position: relative;
+}
+
+.journey-milestones::before {
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 220px;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0,200,255,.4),
+            transparent
+        );
+}
+
+
+
+/* =========================
+   PART 4 - ACABAMENTO PREMIUM
+========================= */
+
+/* Seleção */
+
+::selection {
+    background: var(--primary-color);
+    color: var(--background-primary);
+}
+
+/* Glow nos títulos */
+
+.hero-title,
+.section-heading h2 {
+    text-shadow:
+        0 0 15px rgba(0,200,255,.15);
+}
+
+/* Linha azul animada */
+
+.hero-divider {
+    animation: dividerGlow 3s infinite ease-in-out;
+}
+
+@keyframes dividerGlow {
+
+    0%,100% {
+        box-shadow:
+            0 0 10px rgba(0,200,255,.3);
+    }
+
+    50% {
+        box-shadow:
+            0 0 25px rgba(0,200,255,.8),
+            0 0 50px rgba(0,200,255,.3);
+    }
+
+}
+
+/* Imagem da história */
+
+.story-image img {
+    transition:
+        transform .8s ease,
+        filter .8s ease;
+}
+
+.story-card:hover .story-image img {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
+/* Datas da timeline */
+
+.timeline-date {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Efeito neon nos números */
+
+.stat-value {
+    text-shadow:
+        0 0 12px rgba(0,200,255,.2);
+}
+
+/* Fundo decorativo */
+
+.journey-page {
+    position: relative;
+}
+
+.journey-page::before {
+    content: '';
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(0,200,255,.03),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(33,150,243,.03),
+            transparent 30%
+        );
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Garantir conteúdo acima */
+
+.journey-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Suavidade geral */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+.footer{
+    text-align: center;
+
+    padding: 25px 20px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    
+   margin-top: 10px;
+
+    
+}
+
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-bottom: 15px;
+}
+
+.footer-social a{
+    color: var(--text-secondary);
+
+    font-size: 1.3rem;
+
+    transition: .3s;
+}
+
+.footer-social a:hover{
+    color: var(--primary-color);
+}
+
+.footer p{
+    color: var(--text-secondary);
+
+    font-size: .9rem;
+}
+
+
+
+
+/* =========================
+   HEADER RESPONSIVO
+========================= */
+
+/* 1024px */
+
+@media (max-width: 1024px){
+
+    .navbar{
+
+        padding: 0 25px;
+
+    }
+
+    .menu{
+
+        margin-left: 40px;
+        gap: 15px;
+
+    }
+
+    .logo img{
+
+        width: 170px;
+
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+    .menu{
+        gap: 8px;
+    }
+
+    .menu a{
+        font-size: 12px;
+    }
+
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img{
+        margin: 0 auto;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+
+        margin: 0;
+        gap: 12px;
+    }
+
+    .header-actions{
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .buscar-box{
+        top: 100px;
+        right: 25px;
+    }
+
+}
+
+/* =========================
+   MOBILE 375px
+========================= */
+
+@media (max-width: 375px){
+
+    .navbar{
+
+        height: 75px;
+        padding: 0 15px;
+
+    }
+
+    .logo img{
+
+        width: 140px;
+
+    }
+
+    .header-actions{
+
+        gap: 6px;
+
+    }
+
+    .header-actions button{
+
+        width: 35px;
+        height: 35px;
+
+    }
+
+    .buscar-box{
+
+        top: 10px;
+        right: 10px;
+
+        height: 48px;
+    }
+
+    .buscar-box.ativar{
+
+        width: calc(100% - 20px);
+
+    }
+
+    .input-buscar input{
+
+        height: 48px;
+        font-size: 14px;
+
+    }
+
+    .btn-fechar{
+
+        width: 48px;
+        height: 48px;
+
+    }
+
+}
+
+
+/* =========================
+   MOBILE PEQUENO 320px
+========================= */
+
+@media (max-width: 320px){
+
+    .navbar{
+
+        padding: 0 10px;
+
+    }
+
+    .logo img{
+
+        width: 120px;
+
+    }
+
+    .header-actions{
+
+        gap: 4px;
+
+    }
+
+    .header-actions button{
+
+        width: 32px;
+        height: 32px;
+
+        font-size: 12px;
+
+    }
+
+    .buscar-box.ativar{
+
+        width: calc(100% - 15px);
+
+    }
+
+}
+
+
+
+
+/* =========================
+   FULL HD
+========================= */
+
+@media (min-width: 1920px){
+
+    .navbar{
+
+        max-width: 1600px;
+
+    }
+
+    .menu{
+
+        gap: 35px;
+
+    }
+
+    .menu a{
+
+        font-size: 15px;
+
+    }
+
+    .logo img{
+
+        width: 230px;
+
+    }
+
+}
+
+
+
+/* =========================
+   2K / 2560px
+========================= */
+
+@media (min-width: 2560px){
+
+    .navbar{
+
+        max-width: 1900px;
+        height: 110px;
+
+    }
+
+    .logo img{
+
+        width: 280px;
+
+    }
+
+    .menu{
+
+        gap: 45px;
+    }
+
+    .menu a{
+
+        font-size: 17px;
+    }
+
+    .header-actions button{
+
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+
+
+
+
+
+/* ===================================
+   320px → 375px
+=================================== */
+
+@media (max-width: 375px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .journey-hero {
+        padding: 25px 0 50px;
+    }
+
+    .breadcrumb {
+        font-size: .8rem;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item {
+        padding: 25px 15px;
+    }
+
+    .story-card {
+        padding: 15px;
+    }
+
+    .story-image {
+        height: 220px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.4rem;
+    }
+
+    .timeline-item {
+        padding-left: 30px;
+    }
+
+    .timeline-dot {
+        width: 16px;
+        height: 16px;
+    }
+
+    .journey-quote {
+        padding: 25px 15px;
+    }
+
+    .journey-quote blockquote {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* ===================================
+   376px → 767px
+=================================== */
+
+@media (min-width: 376px) and (max-width: 767px) {
+
+    .hero-title {
+        font-size: 2.4rem;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .story-card {
+        grid-template-columns: 1fr;
+    }
+
+    .story-image {
+        height: 260px;
+    }
+
+    .timeline-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* ===================================
+   TABLET
+   768px → 1023px
+=================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .story-card {
+        grid-template-columns: 280px 1fr;
+    }
+
+    .timeline-grid {
+        gap: 30px;
+    }
+
+}
+
+
+/* ===================================
+   NOTEBOOK
+   1024px → 1439px
+=================================== */
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .timeline-grid {
+        gap: 50px;
+    }
+
+}
+
+
+/* ===================================
+   1440px → 1919px
+=================================== */
+
+@media (min-width: 1440px) {
+
+    .container {
+        max-width: 1300px;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
+
+    .hero-description {
+        max-width: 750px;
+        font-size: 1.15rem;
+    }
+
+}
+
+
+/* ===================================
+   FULL HD
+   1920px+
+=================================== */
+
+@media (min-width: 1920px) {
+
+    .container {
+        max-width: 1450px;
+    }
+
+    .hero-title {
+        font-size: 5.5rem;
+    }
+
+    .hero-stats {
+        margin-top: 90px;
+    }
+
+    .section-heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .journey-quote blockquote {
+        max-width: 850px;
+    }
+
+}
+
+
+/* ===================================
+   2K / 2560x1440
+=================================== */
+
+@media (min-width: 2560px) {
+
+    html {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1700px;
+    }
+
+    .hero-title {
+        font-size: 6rem;
+    }
+
+    .hero-description {
+        max-width: 900px;
+    }
+
+    .journey-story,
+    .journey-milestones {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+}
+
+
+
+

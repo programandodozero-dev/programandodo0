@@ -217,7 +217,7 @@ body.dark .logo-light{
 
 html,
 body{
-    overflow-x:auto;
+    overflow-x: hidden;
 }
 
 
@@ -503,7 +503,7 @@ body{
     top: -50px;
 
     right: -50px;
-    left: -50px;
+    
 }
 
 
@@ -1046,7 +1046,7 @@ body{
 
     border-radius:30px;
 
-    overflow:auto;
+    overflow:hidden;
 
     background:#112C52;
 
@@ -1393,9 +1393,8 @@ body{
 
     width:100%;
 
-    width:calc(100% + 58px);
-
-    margin-left:-48px;
+    width:100%;
+    margin-left:0;
 
 
 }
@@ -1418,10 +1417,6 @@ body{
 }
 
 .right-column{
-
-    display:flex;
-
-    flex-direction:column;
 
     gap:28px;
 

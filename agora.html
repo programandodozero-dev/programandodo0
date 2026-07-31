@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda variáveis e tipos de dados em Python com exemplos práticos. Aula gratuita para iniciantes no Programando do Zero.">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="agora-estilo/style.css">
+    <title>Programando do Zero | Comece por Aqui</title>
+</head>
+<body>
+    
+    <header>
+
+    <div class="hero-wrapper">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                                    
+                    <a href="index.html">
+                        <img class="logo-dark" src="comece-estilo/imagens/LOGO-Quadrado-SEM.png" alt="Logo Programando do Zero">
+                        <img class="logo-light" src="comece-estilo/imagens/LOGO-BRANCO-SEM.png" alt="Logo Programando do Zero">
+                    </a>
+                    
+                </div>
+ 
+            <ul class="menu">
+
+
+                <li><a href="index.html">INÍCIO</a></li>
+
+                <li><a href="comece.html" class="active">COMECE POR AQUI</a></li>
+
+                <li><a href="aprendizados.html">APRENDIZADOS</a></li>
+
+                <li><a href="projetos.html">PROJETOS</a></li>
+
+                <li><a href="blog1.html">BLOG</a></li>
+
+                <li><a href="recursos.html">RECURSOS</a></li>
+
+                <li><a href="meta.html">METAS</a></li>
+
+                <li><a href="meta.html">CONTATO</a></li>
+
+            </ul>
+
+            <div class="header-actions">
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button id="theme-btn">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+            </div>
+
+                
+
+        </nav>
+
+            <div class="buscar-box">
+
+            <div class="input-buscar">
+
+                <input 
+                    type="text" 
+                    id="search-input"
+                    placeholder="Faça uma busca..."
+                >
+
+            </div>
+
+
+            <div class="btn-fechar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main class="resources-page">
+
+    <!-- HERO -->
+    <section class="hero-card">
+
+        <div class="hero-left">
+
+            <div class="hero-tag">
+
+                <span>Primeiros Passos</span>
+
+            </div>
+
+            <h1>
+                Tudo que você precisa
+                para começar do zero!
+            </h1>
+
+            <p>
+                Recursos e conteúdos essenciais selecionados para
+                iniciar sua jornada na programação com o pé direito.
+            </p>
+
+            <a href="https://www.youtube.com/@ProgramandoDo0" target="_blank" class="hero-btn">
+
+                <span>Começar agora</span>
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-right">
+
+            <img
+                src="agora-estilo/imagens/programador.png" alt="Foguete">
+
+        </div>
+
+    </section>
+
+        <!-- CATEGORIAS -->
+    <section class="categories">
+
+        <h2>Explore por categoria</h2>
+
+        <div class="categories-grid">
+
+            <!-- CARD 01 -->
+            <article class="category-card fundamentals">
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div class="category-content">
+
+                    <h3>Fundamentos</h3>
+
+                    <p>
+                        Conceitos básicos para entender a programação.
+                    </p>
+
+                    <a href="#" class="category-link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 02 -->
+            <article class="category-card code">
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div class="category-content">
+
+                    <h3>Primeiros Códigos</h3>
+
+                    <p>
+                        Exemplos práticos para escrever seus primeiros códigos.
+                    </p>
+
+                    <a href="#" class="category-link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 03 -->
+            <article class="category-card tools">
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-terminal"></i>
+                </div>
+
+                <div class="category-content">
+
+                    <h3>Ferramentas</h3>
+
+                    <p>
+                        Softwares e ferramentas essenciais para começar.
+                    </p>
+
+                    <a href="#" class="category-link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CARD 04 -->
+            <article class="category-card tips">
+
+                <div class="category-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <div class="category-content">
+
+                    <h3>Dicas & Boas Práticas</h3>
+
+                    <p>
+                        Dicas valiosas para aprender mais rápido e melhor.
+                    </p>
+
+                    <a href="#" class="category-link">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+        <!-- RECURSOS RECOMENDADOS -->
+    <section class="recommended-resources">
+
+        <h2>Recursos recomendados</h2>
+
+        <div class="resources-grid">
+
+            <!-- Python -->
+            <article class="resource-card">
+
+                <div class="resource-image">
+                    <img
+                        src="img/python.jpg"
+                        alt="Python do Zero"
+                    >
+                </div>
+
+                <div class="resource-info">
+
+                    <h3>Python do Zero</h3>
+
+                    <p>
+                        Curso completo para iniciantes em Python.
+                    </p>
+
+                </div>
+
+                <div class="resource-meta">
+
+                    <span class="resource-tag course">
+                        Curso
+                    </span>
+
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- VS CODE -->
+            <article class="resource-card">
+
+                <div class="resource-image">
+                    <img
+                        src="img/vscode.jpg"
+                        alt="VS Code Guia Rápido"
+                    >
+                </div>
+
+                <div class="resource-info">
+
+                    <h3>VS Code Guia Rápido</h3>
+
+                    <p>
+                        Aprenda o básico do editor mais usado.
+                    </p>
+
+                </div>
+
+                <div class="resource-meta">
+
+                    <span class="resource-tag guide">
+                        Guia
+                    </span>
+
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- HTML CSS JS -->
+            <article class="resource-card">
+
+                <div class="resource-image">
+                    <img
+                        src="img/html-css-js.jpg"
+                        alt="HTML CSS JavaScript"
+                    >
+                </div>
+
+                <div class="resource-info">
+
+                    <h3>HTML, CSS e JavaScript</h3>
+
+                    <p>
+                        Trio essencial para desenvolvimento web.
+                    </p>
+
+                </div>
+
+                <div class="resource-meta">
+
+                    <span class="resource-tag course">
+                        Curso
+                    </span>
+
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- GIT -->
+            <article class="resource-card">
+
+                <div class="resource-image">
+                    <img
+                        src="img/git.jpg"
+                        alt="Git e GitHub"
+                    >
+                </div>
+
+                <div class="resource-info">
+
+                    <h3>Git e GitHub para Iniciantes</h3>
+
+                    <p>
+                        Controle de versão e colaboração.
+                    </p>
+
+                </div>
+
+                <div class="resource-meta">
+
+                    <span class="resource-tag guide">
+                        Guia
+                    </span>
+
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+    </section>
+
+        <!-- CTA FINAL -->
+    <section class="cta-section">
+
+        <div class="cta-content">
+
+            <div class="cta-icon">
+
+                <i class="fa-solid fa-rocket"></i>
+
+            </div>
+
+            <div class="cta-text">
+
+                <h2>
+                    Pronto para começar sua jornada?
+                </h2>
+
+                <p>
+                    Escolha um recurso e dê o primeiro passo rumo ao sucesso!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="cta-action">
+
+            <a href="recursos.html" class="cta-button">
+
+                <span>Explorar todos os recursos</span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+    <footer class="footer">
+
+       <div class="footer-social">
+
+            <a href="https://www.youtube.com/@ProgramandoDo0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/Programando-do-0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@programandodo098" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+
+        </div>
+
+        <p>
+            © 2026 Programando do Zero • Criado por Manuel Bumba
+        </p>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
