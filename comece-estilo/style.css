@@ -695,7 +695,7 @@ body.dark .logo-light{
 /* Card frase */
 
 .quote-card{
-    grid-column: span 3;
+    grid-column: span 6;
 
     display: flex;
     justify-content: space-between;
@@ -703,6 +703,7 @@ body.dark .logo-light{
 
     padding: 30px;
 
+    
     border-radius: 16px;
 
     background: linear-gradient(
@@ -714,20 +715,7 @@ body.dark .logo-light{
     border: 1px solid rgba(255,255,255,.08);
 }
 
-.btn-evolution{
-    padding: 14px 24px;
 
-    border-radius: 10px;
-
-    text-decoration: none;
-    color: white;
-
-    background: linear-gradient(
-        90deg,
-        #7c5cff,
-        #5b8cff
-    );
-}
 
 
 /* =================================
