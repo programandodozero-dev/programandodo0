@@ -23,7 +23,6 @@
 
     <div class="hero-wrapper">
 
-      
 
       <nav class="navbar">
 
@@ -98,74 +97,133 @@
   </header>
 
 
-      <main class="contact-page">
 
-    <!-- HERO -->
+<main class="contact-page">
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
     <section class="contact-hero">
 
         <div class="hero-left">
 
-           <div class="breadcrumb">
-                <a href="meta.html">METAS</a>
+            <!-- BREADCRUMB -->
+            <div class="breadcrumb">
+
+                <a href="meta.html">
+                    METAS
+                </a>
+
                 <i class="fa-solid fa-chevron-left"></i>
-                <p>CONTATO</p>
+
+                <p>
+                    CONTATO
+                </p>
+
             </div>
 
 
+            <!-- TÍTULO -->
             <h1>
                 Entre em <span class="gradient-text">Contato</span>
             </h1>
 
+
+            <!-- DESCRIÇÃO -->
             <p class="hero-description">
                 Tem alguma dúvida, sugestão, parceria ou quer apenas trocar uma ideia?
-                Preencha o formulário ou me encontre nas redes sociais!
+                Preencha o formulário ou fale comigo diretamente pelo WhatsApp.
             </p>
 
+
+            <!-- DESTAQUES -->
             <div class="hero-highlights">
 
+
+                <!-- RESPOSTA RÁPIDA -->
                 <div class="highlight-card">
+
                     <div class="highlight-icon">
+
                         <i class="fa-solid fa-bolt"></i>
+
                     </div>
 
                     <div>
-                        <h3>Resposta rápida</h3>
-                        <p>Retorno em até 48h</p>
+
+                        <h3>
+                            Resposta rápida
+                        </h3>
+
+                        <p>
+                            Retorno em até 48h
+                        </p>
+
                     </div>
+
                 </div>
 
+
+                <!-- AMBIENTE SEGURO -->
                 <div class="highlight-card">
+
                     <div class="highlight-icon">
+
                         <i class="fa-solid fa-shield-halved"></i>
+
                     </div>
 
                     <div>
-                        <h3>Ambiente seguro</h3>
-                        <p>Seus dados protegidos</p>
+
+                        <h3>
+                            Ambiente seguro
+                        </h3>
+
+                        <p>
+                            Seus dados protegidos
+                        </p>
+
                     </div>
+
                 </div>
 
+
+                <!-- CRESCER JUNTOS -->
                 <div class="highlight-card">
+
                     <div class="highlight-icon">
+
                         <i class="fa-solid fa-heart"></i>
+
                     </div>
 
                     <div>
-                        <h3>Vamos crescer juntos</h3>
-                        <p>Toda mensagem é importante!</p>
+
+                        <h3>
+                            Vamos crescer juntos
+                        </h3>
+
+                        <p>
+                            Toda mensagem é importante!
+                        </p>
+
                     </div>
+
                 </div>
 
             </div>
 
         </div>
 
+
+        <!-- ILUSTRAÇÃO -->
         <div class="hero-right">
 
             <div class="hero-illustration">
 
                 <img
-                    src="meta-estilo/imagens/programador.png" alt="Contato"
+                    src="meta-estilo/imagens/programador.png"
+                    alt="Programador do Zero"
                 >
 
             </div>
@@ -174,29 +232,98 @@
 
     </section>
 
-    <!-- CONTEÚDO -->
+
+
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
     <section class="contact-content">
 
-        <!-- FORMULÁRIO -->
+
+        <!-- =================================================
+             FORMULÁRIO
+        ================================================== -->
         <div class="contact-form-card">
 
+
+            <!-- CABEÇALHO -->
             <div class="card-header">
 
-
                 <div>
-                    <h2>Envie sua mensagem</h2>
+
+                    <h2>
+                        Envie sua mensagem
+                    </h2>
 
                     <p>
-                        Preencha o formulário abaixo e entrarei em contato o mais breve possível.
+                        Preencha o formulário abaixo e entrarei em contato
+                        o mais breve possível.
                     </p>
+
                 </div>
 
             </div>
 
-            <form>
+
+
+            <!-- =================================================
+                 FORMULÁRIO WEB3FORMS
+            ================================================== -->
+
+            <form
+                id="contactForm"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+            >
+
+
+                <!--
+                    IMPORTANTE:
+
+                    Substitua SUA_ACCESS_KEY pela Access Key
+                    fornecida pelo Web3Forms.
+                -->
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="SUA_ACCESS_KEY"
+                >
+
+
+                <!-- NOME DO SITE -->
+                <input
+                    type="hidden"
+                    name="from_name"
+                    value="Programando do Zero"
+                >
+
+
+                <!-- ASSUNTO PADRÃO -->
+                <input
+                    type="hidden"
+                    name="subject"
+                    value="Nova mensagem - Programando do Zero"
+                >
+
+
+                <!-- BOT HONEYPOT ANTI-SPAM -->
+                <input
+                    type="checkbox"
+                    name="botcheck"
+                    class="hidden"
+                    style="display:none"
+                >
+
+
+
+                <!-- =========================================
+                     NOME + E-MAIL
+                ========================================== -->
 
                 <div class="form-grid">
 
+
+                    <!-- NOME -->
                     <div class="form-group">
 
                         <label for="name">
@@ -206,11 +333,16 @@
                         <input
                             type="text"
                             id="name"
+                            name="name"
                             placeholder="Seu nome"
+                            autocomplete="name"
+                            required
                         >
 
                     </div>
 
+
+                    <!-- E-MAIL -->
                     <div class="form-group">
 
                         <label for="email">
@@ -220,26 +352,43 @@
                         <input
                             type="email"
                             id="email"
+                            name="email"
                             placeholder="seu@email.com"
+                            autocomplete="email"
+                            required
                         >
 
                     </div>
 
                 </div>
 
+
+
+                <!-- =========================================
+                     ASSUNTO
+                ========================================== -->
+
                 <div class="form-group">
 
-                    <label for="subject">
+                    <label for="message_subject">
                         Assunto
                     </label>
 
                     <input
                         type="text"
-                        id="subject"
+                        id="message_subject"
+                        name="message_subject"
                         placeholder="Sobre o que é sua mensagem?"
+                        required
                     >
 
                 </div>
+
+
+
+                <!-- =========================================
+                     MENSAGEM
+                ========================================== -->
 
                 <div class="form-group">
 
@@ -249,51 +398,103 @@
 
                     <textarea
                         id="message"
+                        name="message"
                         rows="10"
                         placeholder="Escreva sua mensagem aqui..."
+                        required
                     ></textarea>
 
                 </div>
 
+
+
+                <!-- =========================================
+                     BOTÕES
+                ========================================== -->
+
                 <div class="form-footer">
 
-                    <button type="submit">
+
+                    <!-- ENVIAR POR E-MAIL -->
+                    <button
+                        type="submit"
+                        id="emailSubmitButton"
+                    >
 
                         <i class="fa-solid fa-paper-plane"></i>
 
-                        Enviar mensagem
+                        <span>
+                            Enviar mensagem
+                        </span>
 
                     </button>
 
+
+
+                    <!-- ENVIAR PELO WHATSAPP -->
+                    <button
+                        type="button"
+                        id="whatsappButton"
+                        class="whatsapp-button"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        <span>
+                            Enviar pelo WhatsApp
+                        </span>
+
+                    </button>
+
+
+                    <!-- SEGURANÇA -->
                     <div class="security-info">
 
                         <i class="fa-solid fa-lock"></i>
 
                         <span>
-                            Seus dados estão 100% protegidos.
+                            Seus dados estão protegidos.
                         </span>
 
                     </div>
 
                 </div>
 
+
             </form>
 
         </div>
 
-                <!-- SIDEBAR -->
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
         <aside class="contact-sidebar">
 
-            <!-- REDES SOCIAIS -->
+
+            <!-- =================================================
+                 REDES SOCIAIS
+            ================================================== -->
             <div class="social-card">
+
 
                 <div class="card-title">
 
-                    <h2>Redes Sociais</h2>
+                    <h2>
+                        Redes Sociais
+                    </h2>
 
                 </div>
 
+
+
                 <div class="social-list">
+
+
+                    <!-- =====================================
+                         YOUTUBE
+                    ====================================== -->
 
                     <div class="social-item">
 
@@ -302,19 +503,39 @@
                             <i class="fa-brands fa-youtube"></i>
 
                             <div>
-                                <h3>YouTube</h3>
-                                <p>Acompanhe os vídeos e tutoriais</p>
+
+                                <h3>
+                                    YouTube
+                                </h3>
+
+                                <p>
+                                    Acompanhe os vídeos e tutoriais
+                                </p>
+
                             </div>
 
                         </div>
 
-                        <a href="https://www.youtube.com/channel/UCCJd1zmuFBoFcL8dxV7dYrg" target="_blank" rel="noopener noreferrer">
+
+                        <a
+                            href="https://www.youtube.com/channel/UCCJd1zmuFBoFcL8dxV7dYrg"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
                             Programando do Zero | Minha Trajetória
 
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
                         </a>
 
                     </div>
+
+
+
+                    <!-- =====================================
+                         GITHUB
+                    ====================================== -->
 
                     <div class="social-item">
 
@@ -323,19 +544,39 @@
                             <i class="fa-brands fa-github"></i>
 
                             <div>
-                                <h3>GitHub</h3>
-                                <p>Veja meus projetos e códigos</p>
+
+                                <h3>
+                                    GitHub
+                                </h3>
+
+                                <p>
+                                    Veja meus projetos e códigos
+                                </p>
+
                             </div>
 
                         </div>
 
-                        <a href="https://github.com/Programando-do-0" target="_blank" rel="noopener noreferrer"">
+
+                        <a
+                            href="https://github.com/Programando-do-0"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
                             Programando do Zero
 
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
                         </a>
 
                     </div>
+
+
+
+                    <!-- =====================================
+                         TIKTOK
+                    ====================================== -->
 
                     <div class="social-item">
 
@@ -344,19 +585,39 @@
                             <i class="fa-brands fa-tiktok"></i>
 
                             <div>
-                                <h3>TikTok</h3>
-                                <p>Conteúdos rápidos e dicas</p>
+
+                                <h3>
+                                    TikTok
+                                </h3>
+
+                                <p>
+                                    Conteúdos rápidos e dicas
+                                </p>
+
                             </div>
 
                         </div>
 
-                        <a href="https://www.tiktok.com/@programandodo098" target="_blank" rel="noopener noreferrer">
-                           Programando do Zero
+
+                        <a
+                            href="https://www.tiktok.com/@programandodo098"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            Programando do Zero
 
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
                         </a>
 
                     </div>
+
+
+
+                    <!-- =====================================
+                         INSTAGRAM
+                    ====================================== -->
 
                     <div class="social-item">
 
@@ -365,44 +626,84 @@
                             <i class="fa-brands fa-instagram"></i>
 
                             <div>
-                                <h3>Instagram</h3>
-                                <p>Bastidores e rotina de estudos</p>
+
+                                <h3>
+                                    Instagram
+                                </h3>
+
+                                <p>
+                                    Bastidores e rotina de estudos
+                                </p>
+
                             </div>
 
                         </div>
 
-                        <a href="#">
+
+                        <!--
+                            COLOQUE O LINK REAL DO INSTAGRAM
+                            QUANDO TIVER.
+                        -->
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
                             @programandodozero
 
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
                         </a>
 
                     </div>
+
 
                 </div>
 
             </div>
 
-            <!-- OUTRAS FORMAS -->
+
+
+            <!-- =================================================
+                 OUTRAS FORMAS DE CONTATO
+            ================================================== -->
+
             <div class="contact-info-card">
+
 
                 <div class="card-title">
 
-                    <h2>Outras formas de contato</h2>
+                    <h2>
+                        Outras formas de contato
+                    </h2>
 
                 </div>
 
+
+
+                <!-- =========================================
+                     E-MAIL
+                ========================================== -->
+
                 <div class="contact-info-item">
+
 
                     <div class="left">
 
                         <div class="icon">
+
                             <i class="fa-regular fa-envelope"></i>
+
                         </div>
+
 
                         <div>
 
-                            <h3>E-mail</h3>
+                            <h3>
+                                E-mail
+                            </h3>
 
                             <p>
                                 programandodozero1@gmail.com
@@ -412,23 +713,87 @@
 
                     </div>
 
-                    <button>
+
+                    <a
+                        href="mailto:programandodozero1@gmail.com"
+                        class="contact-action-button"
+                    >
+
                         Enviar e-mail
-                    </button>
+
+                    </a>
 
                 </div>
 
+
+
+                <!-- =========================================
+                     WHATSAPP
+                ========================================== -->
+
                 <div class="contact-info-item">
+
 
                     <div class="left">
 
                         <div class="icon">
-                            <i class="fa-regular fa-envelope-open"></i>
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
                         </div>
+
 
                         <div>
 
-                            <h3>Resposta</h3>
+                            <h3>
+                                WhatsApp
+                            </h3>
+
+                            <p>
+                                Fale comigo diretamente
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="https://wa.me/244941056432"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-action-button"
+                    >
+
+                        WhatsApp
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     TEMPO DE RESPOSTA
+                ========================================== -->
+
+                <div class="contact-info-item">
+
+
+                    <div class="left">
+
+                        <div class="icon">
+
+                            <i class="fa-regular fa-envelope-open"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                Resposta
+                            </h3>
 
                             <p>
                                 Normalmente respondo em até 48h
@@ -438,53 +803,359 @@
 
                     </div>
 
+
                     <span class="response-badge">
+
                         Até 48h
+
                     </span>
 
                 </div>
 
+
             </div>
+
 
         </aside>
 
     </section>
 
-          <!-- LOCALIZAÇÃO -->
+
+
+    <!-- =====================================================
+         LOCALIZAÇÃO
+    ====================================================== -->
+
     <section class="location-section">
+
 
         <div class="location-card">
 
+
+            <!-- INFORMAÇÕES -->
             <div class="location-content">
+
 
                 <div class="location-title">
 
                     <i class="fa-solid fa-location-dot"></i>
 
-                    <h2>Localização</h2>
+                    <h2>
+                        Localização
+                    </h2>
 
                 </div>
 
-                <h3>Angola</h3>
+
+                <h3>
+                    Angola
+                </h3>
+
 
                 <p>
                     Criando conteúdo de qualquer lugar
-                    com foco e disciplina. 
+                    com foco e disciplina.
                 </p>
 
+
             </div>
 
+
+
+            <!-- GLOBO -->
             <div class="location-map">
 
-        <img
-            src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/globe.svg" alt="Globo" width="80" height="80">
+                <img
+                    src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/globe.svg"
+                    alt="Globo representando Angola e o mundo"
+                    width="80"
+                    height="80"
+                >
+
             </div>
+
 
         </div>
 
     </section>
 
 </main>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* =====================================================
+       ELEMENTOS
+    ====================================================== */
+
+    const form =
+        document.getElementById("contactForm");
+
+
+    const whatsappButton =
+        document.getElementById("whatsappButton");
+
+
+    const emailSubmitButton =
+        document.getElementById("emailSubmitButton");
+
+
+
+    /* =====================================================
+       CONFIGURAÇÃO DO WHATSAPP
+    ====================================================== */
+
+    const whatsappNumber =
+        "244941056432";
+
+
+
+    /* =====================================================
+       ENVIO PARA WHATSAPP
+    ====================================================== */
+
+    whatsappButton.addEventListener(
+        "click",
+        function () {
+
+
+            /* ---------------------------------------------
+               PEGAR VALORES
+            ---------------------------------------------- */
+
+            const name =
+                document.getElementById("name")
+                .value
+                .trim();
+
+
+            const email =
+                document.getElementById("email")
+                .value
+                .trim();
+
+
+            const subject =
+                document.getElementById("message_subject")
+                .value
+                .trim();
+
+
+            const message =
+                document.getElementById("message")
+                .value
+                .trim();
+
+
+
+            /* ---------------------------------------------
+               VERIFICAR CAMPOS
+            ---------------------------------------------- */
+
+            if (
+                !name ||
+                !email ||
+                !subject ||
+                !message
+            ) {
+
+                alert(
+                    "Por favor, preencha todos os campos antes de enviar pelo WhatsApp."
+                );
+
+                return;
+
+            }
+
+
+
+            /* ---------------------------------------------
+               VERIFICAR E-MAIL
+            ---------------------------------------------- */
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+            if (!emailPattern.test(email)) {
+
+                alert(
+                    "Por favor, informe um e-mail válido."
+                );
+
+                return;
+
+            }
+
+
+
+            /* ---------------------------------------------
+               CRIAR MENSAGEM
+            ---------------------------------------------- */
+
+            const whatsappMessage =
+`Olá, Programando do Zero!
+
+Nova mensagem enviada pelo site.
+
+Nome: ${name}
+
+E-mail: ${email}
+
+Assunto: ${subject}
+
+Mensagem:
+
+${message}`;
+
+
+
+            /* ---------------------------------------------
+               CODIFICAR
+            ---------------------------------------------- */
+
+            const encodedMessage =
+                encodeURIComponent(
+                    whatsappMessage
+                );
+
+
+
+            /* ---------------------------------------------
+               LINK WHATSAPP
+            ---------------------------------------------- */
+
+            const whatsappURL =
+                `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+
+
+            /* ---------------------------------------------
+               ABRIR WHATSAPP
+            ---------------------------------------------- */
+
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
+
+        }
+    );
+
+
+
+    /* =====================================================
+       FORMULÁRIO DE E-MAIL
+    ====================================================== */
+
+    form.addEventListener(
+        "submit",
+        function (event) {
+
+
+            /* ---------------------------------------------
+               PEGAR VALORES
+            ---------------------------------------------- */
+
+            const name =
+                document.getElementById("name")
+                .value
+                .trim();
+
+
+            const email =
+                document.getElementById("email")
+                .value
+                .trim();
+
+
+            const subject =
+                document.getElementById("message_subject")
+                .value
+                .trim();
+
+
+            const message =
+                document.getElementById("message")
+                .value
+                .trim();
+
+
+
+            /* ---------------------------------------------
+               VALIDAÇÃO
+            ---------------------------------------------- */
+
+            if (
+                !name ||
+                !email ||
+                !subject ||
+                !message
+            ) {
+
+                event.preventDefault();
+
+                alert(
+                    "Por favor, preencha todos os campos."
+                );
+
+                return;
+
+            }
+
+
+
+            /* ---------------------------------------------
+               VALIDAR E-MAIL
+            ---------------------------------------------- */
+
+            const emailPattern =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+            if (!emailPattern.test(email)) {
+
+                event.preventDefault();
+
+                alert(
+                    "Por favor, informe um e-mail válido."
+                );
+
+                return;
+
+            }
+
+
+
+            /* ---------------------------------------------
+               ALTERAR BOTÃO
+            ---------------------------------------------- */
+
+            emailSubmitButton.disabled = true;
+
+
+            emailSubmitButton.innerHTML =
+                `
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <span>Enviando...</span>
+                `;
+
+        }
+    );
+
+});
+
+</script>
+```
+
 
         
     <footer class="footer">
