@@ -334,6 +334,12 @@ body.dark .logo-light{
     SLIDER
 ========================================*/
 
+.slide-header{
+
+    text-align:center;
+
+}
+
 .slider{
 
     position:relative;
@@ -370,20 +376,25 @@ body.dark .logo-light{
 
 .slide{
 
-    width:100%;
-    flex-shrink:0;
-
-    position:relative;
-
     display:flex;
-    align-items:center;
 
-    padding:80px;
+    flex-direction:column;
 
-    background-size:cover;
-    background-position:center;
+    justify-content:space-between;
+
+    padding:70px 110px;
 
 }
+
+.slide-footer{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
 
 /*=========================
     IMAGENS
@@ -424,73 +435,31 @@ body.dark .logo-light{
 /*========================================
     CONTEÚDO
 ========================================*/
-
 .slide-content{
 
-    width:700px;
-
-}
-
-.categoria{
-
-    color:var(--primary-color);
-
-    font-family:var(--font-menu);
-
-    letter-spacing:3px;
-
-    font-size:.9rem;
-
-}
-
-.slide-icon{
-
-    width:110px;
-
-    height:110px;
-
-    border-radius:25px;
-
-    background:rgba(0,200,255,.12);
+    width:100%;
 
     display:flex;
 
-    align-items:center;
-
-    justify-content:center;
-
-    color:var(--primary-color);
-
-    font-size:3rem;
-
-    margin-bottom:30px;
+    flex-direction:column;
 
 }
 
-.slide h1{
-
-    color:var(--text-primary);
-
-    font-size:4rem;
-
-    margin:20px 0;
-
-    font-family:var(--font-title);
-
+.slide h1 {
+    color: var(--text-primary);
+    font-size: 4rem;
+    text-align: center;
+    margin: -60px 0 25px;
+    font-family: var(--font-title);
 }
 
-.slide p{
-
-    color:var(--text-secondary);
-
-    line-height:1.9;
-
-    font-size:1.1rem;
-
-    margin-bottom:35px;
-
-    font-family:var(--font-text);
-
+.slide p {
+    color: var(--text-secondary);
+    line-height: 1.9;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 0 35px;
+    font-family: var(--font-text);
 }
 
 /*========================================
@@ -503,13 +472,22 @@ body.dark .logo-light{
 
     flex-wrap:wrap;
 
-    gap:15px;
+    justify-content:center;
 
-    margin-bottom:45px;
+    align-content:flex-start;
+
+    gap:18px;
+
+    width:100%;
+
+    flex:1;
+
+    margin:50px 0;
 
 }
-
 .topic{
+
+    flex: 0 0 auto;
 
     padding:12px 22px;
 
@@ -617,13 +595,13 @@ body.dark .logo-light{
 
 .prev{
 
-    left:25px;
+    left:10px;
 
 }
 
 .next{
 
-    right:25px;
+    right:10px;
 
 }
 
@@ -672,6 +650,25 @@ body.dark .logo-light{
     background:var(--primary-color);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*========================================
     RESPONSIVO
@@ -737,4 +734,61 @@ body.dark .logo-light{
 
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    text-align: center;
+
+    padding: 25px 20px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    
+   margin-top: 10px;
+
+    
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-bottom: 15px;
+}
+
+.footer-social a{
+    color: var(--text-secondary);
+
+    font-size: 1.3rem;
+
+    transition: .3s;
+}
+
+.footer-social a:hover{
+    color: var(--primary-color);
+}
+
+.footer p{
+    color: var(--text-secondary);
+
+    font-size: .9rem;
 }
